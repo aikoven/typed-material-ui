@@ -1,0 +1,10 @@
+# IntelliJ IDEA
+.idea
+*.iml
+
+# NPM
+node_modules
+typings
+
+# OS X
+.DS_Store
