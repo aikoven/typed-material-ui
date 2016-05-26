@@ -1,7 +1,6 @@
-
 export {default as MuiThemeProvider} from './styles/MuiThemeProvider';
-// import * as colors from './styles/colors';
-// export {colors};
+import * as colors from './styles/colors';
+export {colors};
 export {default as darkBaseTheme} from './styles/baseThemes/darkBaseTheme';
 // export {default as DarkRawTheme} from './styles/baseThemes/darkBaseTheme';
 export {default as lightBaseTheme} from './styles/baseThemes/lightBaseTheme';
