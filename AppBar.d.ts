@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {TouchTapEventHandler} from "./TouchTapEvent";
+import {TouchTapEventHandler} from "./common";
 
 
 export interface AppBarProps extends React.Props<AppBar> {

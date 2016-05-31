@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 
-export interface TextFieldProps extends React.Props<TextField> {
+export interface TextFieldProps {
   className?: string;
   defaultValue?: string | number;
   disabled?: boolean;
@@ -35,4 +35,8 @@ export interface TextFieldProps extends React.Props<TextField> {
 }
 
 export default class TextField extends React.Component<TextFieldProps, {}> {
+  blur(): void;
+  clearValue(): void;
+  focus(): void;
+  getValue(): string;
 }

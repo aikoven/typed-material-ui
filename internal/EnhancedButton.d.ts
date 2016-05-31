@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {TouchTapEventHandler} from "../TouchTapEvent";
+import {TouchTapEventHandler} from "../common";
 
 export interface SharedEnhancedButtonProps<T> extends React.Props<T> {
   centerRipple?: boolean;

@@ -11,3 +11,9 @@ export interface TouchTapEvent extends React.SyntheticEvent {
 
 // What's common between React.TouchEventHandler and React.MouseEventHandler
 export interface TouchTapEventHandler extends React.EventHandler<TouchTapEvent> { }
+
+
+export interface Origin {
+  horizontal: 'left' | 'middle' | 'right';
+  vertical: 'top' | 'center' | 'bottom';
+}
