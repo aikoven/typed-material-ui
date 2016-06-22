@@ -1,7 +1,8 @@
 import * as React from 'react';
 import {TouchTapEventHandler} from "../common";
 
-export interface SharedEnhancedButtonProps<T> extends React.Props<T> {
+export interface SharedEnhancedButtonProps {
+  children?: React.ReactNode;
   centerRipple?: boolean;
   disableFocusRipple?: boolean;
   disableKeyboardFocus?: boolean;
@@ -24,7 +25,7 @@ export interface SharedEnhancedButtonProps<T> extends React.Props<T> {
   type?: string;
 }
 
-export interface EnhancedButtonProps extends React.HTMLAttributes, SharedEnhancedButtonProps<EnhancedButton> {
+export interface EnhancedButtonProps extends React.HTMLAttributes, SharedEnhancedButtonProps {
   // container element, <button/>, or <span/>(if disabled link) is the element that get the 'other' properties
   containerElement?: React.ReactNode | string;
   disabled?: boolean;

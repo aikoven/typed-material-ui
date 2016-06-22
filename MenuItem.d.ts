@@ -1,7 +1,8 @@
 import * as React from 'react';
 import {TouchTapEventHandler} from "./common";
+import {ListItemProps} from "./List";
 
-export interface MenuItemProps extends React.HTMLAttributes, React.Props<MenuItem> {
+export interface MenuItemProps extends ListItemProps {
   checked?: boolean;
   disabled?: boolean;
   focusState?: string; // 'none', 'focused', or 'keyboard-focused'

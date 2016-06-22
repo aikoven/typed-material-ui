@@ -7,6 +7,7 @@ export interface ToggleProps extends React.Props<Toggle> {
   elementStyle?: React.CSSProperties;
   iconStyle?: React.CSSProperties;
   inputStyle?: React.CSSProperties;
+  label?: string;
   labelPosition?: string; // oneOf(['left', 'right'])
   labelStyle?: React.CSSProperties;
   onToggle?: (e: React.MouseEvent, isInputChecked: boolean) => void;

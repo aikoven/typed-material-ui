@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {SharedEnhancedButtonProps} from "./internal/EnhancedButton";
 
-export interface FlatButtonProps extends SharedEnhancedButtonProps<FlatButton> {
+export interface FlatButtonProps extends SharedEnhancedButtonProps {
   // <EnhancedButton/> is the element that get the 'other' properties
   backgroundColor?: string;
   disabled?: boolean;

@@ -32,6 +32,10 @@ export interface TextFieldProps {
   underlineShow?: boolean;
   underlineStyle?: React.CSSProperties;
   value?: string | number;
+
+  min?: string | number;
+  max?: string | number;
+  step?: string | number;
 }
 
 export default class TextField extends React.Component<TextFieldProps, {}> {

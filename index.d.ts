@@ -1,15 +1,26 @@
 export {default as AppBar, AppBarProps} from './AppBar';
 export {default as AutoComplete, AutoCompleteProps} from './AutoComplete';
-// export {default as Avatar} from './Avatar';
+export {default as Avatar, AvatarProps} from './Avatar';
 // export {default as Badge} from './Badge';
-// export {default as Card} from './Card';
+export {
+  Card, CardProps,
+  CardHeader, CardHeaderProps,
+  CardTitle, CardTitleProps,
+  CardMedia, CardMediaProps,
+  CardText, CardTextProps,
+  CardActions, CardActionsProps,
+  CardExpandable, CardExpandableProps,
+} from './Card';
 // export {default as CardActions} from './Card/CardActions';
 // export {default as CardHeader} from './Card/CardHeader';
 // export {default as CardMedia} from './Card/CardMedia';
 // export {default as CardTitle} from './Card/CardTitle';
 // export {default as CardText} from './Card/CardText';
 // export {default as Checkbox} from './Checkbox';
-// export {default as CircularProgress} from './CircularProgress';
+export {
+  default as CircularProgress,
+  CircularProgressProps
+} from './CircularProgress';
 // export {default as DatePicker} from './DatePicker';
 // export {default as Dialog} from './Dialog';
 export {default as Divider, DividerProps} from './Divider';
@@ -39,7 +50,7 @@ export {
 export {default as RaisedButton, RaisedButtonProps} from './RaisedButton';
 // export {default as RefreshIndicator} from './RefreshIndicator';
 export {default as SelectField, SelectFieldProps} from './SelectField';
-// export {default as Slider} from './Slider';
+export {default as Slider, SliderProps} from './Slider';
 export {default as Subheader, SubheaderProps} from './Subheader';
 // export {default as SvgIcon} from './SvgIcon';
 // export {default as Step} from './Stepper/Step';
@@ -62,9 +73,11 @@ export {
 export {default as TextField, TextFieldProps} from './TextField';
 // export {default as TimePicker} from './TimePicker';
 export {default as Toggle, ToggleProps} from './Toggle';
-// export {default as Toolbar} from './Toolbar';
-// export {default as ToolbarGroup} from './Toolbar/ToolbarGroup';
-// export {default as ToolbarSeparator} from './Toolbar/ToolbarSeparator';
-// export {default as ToolbarTitle} from './Toolbar/ToolbarTitle';
+export {
+  Toolbar, ToolbarProps,
+  ToolbarGroup, ToolbarGroupProps,
+  ToolbarSeparator, ToolbarSeparatorProps,
+  ToolbarTitle, ToolbarTitleProps,
+} from './Toolbar';
 import './styles';
 export * from './common';

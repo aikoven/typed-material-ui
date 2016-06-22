@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {TouchTapEventHandler} from "./common";
+import {EnhancedButtonProps} from "./internal/EnhancedButton";
 
 
 export interface ListProps extends React.Props<List> {
@@ -12,7 +13,7 @@ export class List extends React.Component<ListProps, {}> {
 export default List;
 
 
-export interface ListItemProps extends React.HTMLAttributes, React.Props<ListItem> {
+export interface ListItemProps extends EnhancedButtonProps {
   // <EnhancedButton/> is the element that get the 'other' properties
   autoGenerateNestedIndicator?: boolean;
   disableKeyboardFocus?: boolean;
