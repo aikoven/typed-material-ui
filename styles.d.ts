@@ -32,10 +32,16 @@ export interface ThemePalette {
   shadowColor?: string;
 }
 
-export interface MuiTheme {
+export interface RawTheme {
+  spacing?: Spacing;
+  fontFamily?: string;
+  palette?: ThemePalette;
+  zIndex?: zIndex;
+}
+
+export interface MuiTheme extends RawTheme {
   isRtl?: boolean;
   userAgent?: any;
-  zIndex?: zIndex;
   baseTheme?: RawTheme;
   rawTheme?: RawTheme;
   appBar?: {
@@ -103,6 +109,10 @@ export interface MuiTheme {
   },
   inkBar?: {
     backgroundColor?: string,
+  },
+  drawer?: {
+    width?: number,
+    color?: string,
   },
   leftNav?: {
     width?: number,
@@ -259,10 +269,3 @@ export interface zIndex {
   tooltip: number;
 }
 export var zIndex: zIndex;
-
-export interface RawTheme {
-  spacing?: Spacing;
-  fontFamily?: string;
-  palette?: ThemePalette;
-  zIndex?: zIndex;
-}
