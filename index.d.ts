@@ -21,13 +21,16 @@ export {
   default as CircularProgress,
   CircularProgressProps
 } from './CircularProgress';
-// export {default as DatePicker} from './DatePicker';
-// export {default as Dialog} from './Dialog';
+export {default as DatePicker, DatePickerProps} from './DatePicker';
+export {default as Dialog, DialogProps} from './Dialog';
 export {default as Divider, DividerProps} from './Divider';
 export {default as Drawer, DrawerProps} from './Drawer';
 // export {default as DropDownMenu} from './DropDownMenu';
 export {default as FlatButton, FlatButtonProps} from './FlatButton';
-// export {default as FloatingActionButton} from './FloatingActionButton';
+export {
+  default as FloatingActionButton,
+  FloatingActionButtonProps,
+} from './FloatingActionButton';
 export {default as FontIcon} from './FontIcon';
 // export {default as GridList} from './GridList';
 // export {default as GridTile} from './GridList/GridTile';
@@ -59,8 +62,7 @@ export {default as Subheader, SubheaderProps} from './Subheader';
 // export {default as StepLabel} from './Stepper/StepLabel';
 // export {default as Stepper} from './Stepper/Stepper';
 export {default as Snackbar, SnackbarProps} from './Snackbar';
-// export {default as Tabs} from './Tabs';
-// export {default as Tab} from './Tabs/Tab';
+export {Tabs, Tab} from './Tabs';
 export {
   Table, TableProps,
   TableBody, TableBodyProps,
@@ -79,5 +81,8 @@ export {
   ToolbarSeparator, ToolbarSeparatorProps,
   ToolbarTitle, ToolbarTitleProps,
 } from './Toolbar';
+
 import './styles';
+import './styles/muiThemeable';
+
 export * from './common';
