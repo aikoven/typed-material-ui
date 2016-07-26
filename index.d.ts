@@ -34,8 +34,8 @@ export {
 export {default as FontIcon} from './FontIcon';
 // export {default as GridList} from './GridList';
 // export {default as GridTile} from './GridList/GridTile';
-export {default as IconButton} from './IconButton';
-// export {default as IconMenu} from './IconMenu';
+export {default as IconButton, IconButtonProps} from './IconButton';
+export {default as IconMenu, IconMenuProps} from './IconMenu';
 // export {default as LinearProgress} from './LinearProgress';
 export {List, ListProps, ListItem, ListItemProps} from './List';
 // export {default as ListItem} from './List/ListItem';
