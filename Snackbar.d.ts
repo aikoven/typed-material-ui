@@ -6,9 +6,9 @@ export interface SnackbarProps extends React.Props<Snackbar> {
   autoHideDuration?: number;
   bodyStyle?: React.CSSProperties;
   className?: string;
-  message: string | JSX.Element;
+  message: string | React.ReactChild;
   onActionTouchTap?: React.TouchEventHandler;
-  onRequestClose: (reason: string) => void;
+  onRequestClose?(reason: string): void;
   open: boolean;
   style?: React.CSSProperties;
 }
