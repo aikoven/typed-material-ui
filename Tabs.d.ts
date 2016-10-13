@@ -2,6 +2,11 @@ import * as React from "react";
 import {TouchTapEvent} from "./common";
 
 
+export interface TabTemplateProps {
+  selected?: boolean;
+}
+
+
 export interface TabsProps {
   className?: string;
   contentContainerClassName?: string;
@@ -11,7 +16,9 @@ export interface TabsProps {
   onChange?: (value: any, e: React.FormEvent, tab: Tab) => void;
   style?: React.CSSProperties;
   tabItemContainerStyle?: React.CSSProperties;
-  tabTemplate?: React.ComponentClass<any>;
+  tabTemplate?: string |
+    React.StatelessComponent<TabTemplateProps> |
+    React.ComponentClass<TabTemplateProps>;
   value?: any;
 }
 
