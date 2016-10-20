@@ -1,7 +1,7 @@
 export {default as AppBar, AppBarProps} from './AppBar';
 export {default as AutoComplete, AutoCompleteProps} from './AutoComplete';
 export {default as Avatar, AvatarProps} from './Avatar';
-// export {default as Badge} from './Badge';
+export {default as Badge, BadgeProps} from './Badge';
 export {
   Card, CardProps,
   CardHeader, CardHeaderProps,
