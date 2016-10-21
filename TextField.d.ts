@@ -43,4 +43,5 @@ export default class TextField extends React.Component<TextFieldProps, {}> {
   clearValue(): void;
   focus(): void;
   getValue(): string;
+  getInputNode(): HTMLInputElement | HTMLTextAreaElement;
 }
