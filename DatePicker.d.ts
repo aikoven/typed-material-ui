@@ -37,6 +37,7 @@ export interface DatePickerProps extends React.Props<DatePicker> {
   hintStyle?: React.CSSProperties;
   hintText?: React.ReactNode;
   id?: string;
+  name?: string;
   inputStyle?: React.CSSProperties;
   onBlur?: React.FocusEventHandler;
   onKeyDown?: React.KeyboardEventHandler;
