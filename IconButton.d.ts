@@ -15,7 +15,7 @@ extends React.HTMLAttributes, SharedEnhancedButtonProps {
   onMouseEnter?: React.MouseEventHandler;
   onMouseLeave?: React.MouseEventHandler;
   style?: React.CSSProperties;
-  tooltip?: string;
+  tooltip?: React.ReactNode;
   tooltipPosition?: string;
   tooltipStyles?: React.CSSProperties;
   touch?: boolean;

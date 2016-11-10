@@ -11,7 +11,7 @@ export interface RaisedButtonProps extends SharedEnhancedButtonProps {
   fullWidth?: boolean;
   href?: string;
   icon?: React.ReactNode;
-  label?: string;
+  label?: React.ReactNode;
   labelColor?: string;
   labelPosition?: string; // oneOf(['left', 'right'])
   labelStyle?: React.CSSProperties;
