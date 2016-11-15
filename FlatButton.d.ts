@@ -8,7 +8,7 @@ export interface FlatButtonProps extends SharedEnhancedButtonProps {
   hoverColor?: string;
   href?: string;
   icon?: React.ReactNode;
-  label?: string;
+  label?: React.ReactNode;
   labelPosition?: string; // oneOf(['left', 'right'])
   labelStyle?: React.CSSProperties;
   linkButton?: boolean;
