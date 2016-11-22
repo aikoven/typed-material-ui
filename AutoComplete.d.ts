@@ -10,8 +10,7 @@ export type AutoCompleteDataItem = {
 
 export type AutoCompleteDataSource = AutoCompleteDataItem[];
 
-export interface AutoCompleteProps
-extends React.Props<AutoComplete>, TextFieldProps {
+export interface AutoCompleteProps extends TextFieldProps {
   anchorOrigin?: Origin;
   animated?: boolean;
   dataSource: AutoCompleteDataSource;
@@ -26,8 +25,8 @@ extends React.Props<AutoComplete>, TextFieldProps {
   menuCloseDelay?: number;
   menuProps?: any;
   menuStyle?: React.CSSProperties;
-  onBlur?: React.FocusEventHandler;
-  onFocus?: React.FocusEventHandler;
+  onBlur?: React.FocusEventHandler<any>;
+  onFocus?: React.FocusEventHandler<any>;
   onNewRequest?(chosenRequest: string, index: number): void;
   onUpdateInput?(searchText: string, dataSource: AutoCompleteDataSource): void;
   open?: boolean;

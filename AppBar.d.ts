@@ -9,9 +9,9 @@ export interface AppBarProps {
   iconElementLeft?: React.ReactElement<any>;
   iconElementRight?: React.ReactElement<any>;
   iconStyleRight?: React.CSSProperties;
-  onLeftIconButtonTouchTap?: TouchTapEventHandler;
-  onRightIconButtonTouchTap?: TouchTapEventHandler;
-  onTitleTouchTap?: TouchTapEventHandler;
+  onLeftIconButtonTouchTap?: TouchTapEventHandler<any>;
+  onRightIconButtonTouchTap?: TouchTapEventHandler<any>;
+  onTitleTouchTap?: TouchTapEventHandler<any>;
   showMenuIconButton?: boolean;
   style?: React.CSSProperties;
   title?: React.ReactNode;

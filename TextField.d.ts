@@ -18,10 +18,10 @@ export interface TextFieldProps {
   inputStyle?: React.CSSProperties;
   multiLine?: boolean;
   name?: string;
-  onBlur?: React.FocusEventHandler;
-  onChange?(event: React.FormEvent, value: string | number): void;
-  onFocus?: React.FocusEventHandler;
-  onKeyDown?: React.KeyboardEventHandler;
+  onBlur?: React.FocusEventHandler<any>;
+  onChange?(event: React.FormEvent<any>, value: string | number): void;
+  onFocus?: React.FocusEventHandler<any>;
+  onKeyDown?: React.KeyboardEventHandler<any>;
   rows?: number,
   rowsMax?: number,
   style?: React.CSSProperties;

@@ -2,18 +2,17 @@ import * as React from 'react';
 import {SharedEnhancedButtonProps} from "./internal/EnhancedButton";
 
 
-export interface IconButtonProps 
-extends React.HTMLAttributes, SharedEnhancedButtonProps {
+export interface IconButtonProps extends SharedEnhancedButtonProps {
   // <EnhancedButton/> is the element that get the 'other' properties
   className?: string;
   disabled?: boolean;
   iconClassName?: string;
   iconStyle?: React.CSSProperties;
-  onBlur?: React.FocusEventHandler;
-  onFocus?: React.FocusEventHandler;
-  onKeyboardFocus?: (e: React.FocusEvent, isKeyboardFocused: boolean) => void;
-  onMouseEnter?: React.MouseEventHandler;
-  onMouseLeave?: React.MouseEventHandler;
+  onBlur?: React.FocusEventHandler<any>;
+  onFocus?: React.FocusEventHandler<any>;
+  onKeyboardFocus?: (e: React.FocusEvent<any>, isKeyboardFocused: boolean) => void;
+  onMouseEnter?: React.MouseEventHandler<any>;
+  onMouseLeave?: React.MouseEventHandler<any>;
   style?: React.CSSProperties;
   tooltip?: React.ReactNode;
   tooltipPosition?: string;

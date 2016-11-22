@@ -14,5 +14,5 @@ export interface Spacing {
 }
 
 
-const spacing: Spacing;
+declare const spacing: Spacing;
 export default spacing;

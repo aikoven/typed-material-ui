@@ -1,9 +1,5 @@
 {
   "name": "material-ui",
   "main": "index.d.ts",
-  "version": "0.15.0",
-  "dependencies": {},
-  "ambientDependencies": {
-    "react": "registry:dt/react#0.14.0+20160423065914"
-  }
+  "version": "0.15.0"
 }

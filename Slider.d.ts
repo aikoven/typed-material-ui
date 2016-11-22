@@ -10,11 +10,11 @@ export interface SliderProps {
   max?: number;
   min?: number;
   name?: string;
-  onBlur?: React.FocusEventHandler;
-  onChange?: (e: React.MouseEvent, value: number) => void;
-  onDragStart?: React.MouseEventHandler;
-  onDragStop?: React.MouseEventHandler;
-  onFocus?: React.FocusEventHandler;
+  onBlur?: React.FocusEventHandler<any>;
+  onChange?: (e: React.MouseEvent<any>, value: number) => void;
+  onDragStart?: React.MouseEventHandler<any>;
+  onDragStop?: React.MouseEventHandler<any>;
+  onFocus?: React.FocusEventHandler<any>;
   required?: boolean;
   step?: number;
   style?: React.CSSProperties;

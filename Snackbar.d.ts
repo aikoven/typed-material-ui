@@ -1,13 +1,13 @@
 import * as React from 'react';
 
 
-export interface SnackbarProps extends React.Props<Snackbar> {
+export interface SnackbarProps {
   action?: string;
   autoHideDuration?: number;
   bodyStyle?: React.CSSProperties;
   className?: string;
   message: string | React.ReactChild;
-  onActionTouchTap?: React.TouchEventHandler;
+  onActionTouchTap?: React.TouchEventHandler<any>;
   onRequestClose?(reason: string): void;
   open: boolean;
   style?: React.CSSProperties;

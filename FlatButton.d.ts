@@ -12,10 +12,10 @@ export interface FlatButtonProps extends SharedEnhancedButtonProps {
   labelPosition?: string; // oneOf(['left', 'right'])
   labelStyle?: React.CSSProperties;
   linkButton?: boolean;
-  onKeyboardFocus?: (e: React.FocusEvent, isKeyboardFocused: boolean) => void;
-  onMouseEnter?: React.MouseEventHandler;
-  onMouseLeave?: React.MouseEventHandler;
-  onTouchStart?: React.TouchEventHandler;
+  onKeyboardFocus?: (e: React.FocusEvent<any>, isKeyboardFocused: boolean) => void;
+  onMouseEnter?: React.MouseEventHandler<any>;
+  onMouseLeave?: React.MouseEventHandler<any>;
+  onTouchStart?: React.TouchEventHandler<any>;
   primary?: boolean;
   rippleColor?: string;
   secondary?: boolean;

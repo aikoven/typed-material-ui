@@ -13,12 +13,12 @@ export interface FloatingActionButtonProps extends SharedEnhancedButtonProps {
   iconStyle?: React.CSSProperties;
   linkButton?: boolean;
   mini?: boolean;
-  onMouseDown?: React.MouseEventHandler;
-  onMouseEnter?: React.MouseEventHandler;
-  onMouseLeave?: React.MouseEventHandler;
-  onMouseUp?: React.MouseEventHandler;
-  onTouchEnd?: React.TouchEventHandler;
-  onTouchStart?: React.TouchEventHandler;
+  onMouseDown?: React.MouseEventHandler<any>;
+  onMouseEnter?: React.MouseEventHandler<any>;
+  onMouseLeave?: React.MouseEventHandler<any>;
+  onMouseUp?: React.MouseEventHandler<any>;
+  onTouchEnd?: React.TouchEventHandler<any>;
+  onTouchStart?: React.TouchEventHandler<any>;
   secondary?: boolean;
   style?: React.CSSProperties;
   zDepth?: number;

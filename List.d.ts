@@ -27,12 +27,12 @@ export interface ListItemProps extends EnhancedButtonProps {
   nestedItems?: React.ReactElement<ListItemProps>[];
   nestedLevel?: number;
   nestedListStyle?: React.CSSProperties;
-  onKeyboardFocus?: React.FocusEventHandler;
-  onMouseEnter?: React.MouseEventHandler;
-  onMouseLeave?: React.MouseEventHandler;
-  onNestedListToggle?: (item: ListItem) => void;
-  onTouchStart?: React.TouchEventHandler;
-  onTouchTap?: TouchTapEventHandler;
+  onKeyboardFocus?: React.FocusEventHandler<any>;
+  onMouseEnter?: React.MouseEventHandler<any>;
+  onMouseLeave?: React.MouseEventHandler<any>;
+  onNestedListToggle?: (item: any) => void;
+  onTouchStart?: React.TouchEventHandler<any>;
+  onTouchTap?: TouchTapEventHandler<any>;
   primaryText?: React.ReactNode;
   primaryTogglesNestedList?: boolean;
   rightAvatar?: React.ReactElement<any>;

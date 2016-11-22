@@ -18,9 +18,9 @@ export interface DatePickerProps extends React.Props<DatePicker> {
   okLabel?: string;
   onChange?: (e: any, date: Date) => void; // e is always null
   onDismiss?: () => void;
-  onFocus?: React.FocusEventHandler;
+  onFocus?: React.FocusEventHandler<any>;
   onShow?: () => void;
-  onTouchTap?: React.TouchEventHandler;
+  onTouchTap?: React.TouchEventHandler<any>;
   shouldDisableDate?: (day: Date) => boolean;
   style?: React.CSSProperties;
   textFieldStyle?: React.CSSProperties;
@@ -39,8 +39,8 @@ export interface DatePickerProps extends React.Props<DatePicker> {
   id?: string;
   name?: string;
   inputStyle?: React.CSSProperties;
-  onBlur?: React.FocusEventHandler;
-  onKeyDown?: React.KeyboardEventHandler;
+  onBlur?: React.FocusEventHandler<any>;
+  onKeyDown?: React.KeyboardEventHandler<any>;
   rows?: number,
   rowsMax?: number,
   type?: string;

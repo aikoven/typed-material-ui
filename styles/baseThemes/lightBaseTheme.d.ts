@@ -1,4 +1,4 @@
 import {RawTheme} from "../../styles";
 
-const theme: RawTheme;
+declare const theme: RawTheme;
 export default theme;

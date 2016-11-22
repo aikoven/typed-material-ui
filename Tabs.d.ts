@@ -13,7 +13,7 @@ export interface TabsProps {
   contentContainerStyle?: React.CSSProperties;
   initialSelectedIndex?: number;
   inkBarStyle?: React.CSSProperties;
-  onChange?: (value: any, e: React.FormEvent, tab: Tab) => void;
+  onChange?: (value: any, e: React.FormEvent<any>, tab: Tab) => void;
   style?: React.CSSProperties;
   tabItemContainerStyle?: React.CSSProperties;
   tabTemplate?: string |
@@ -30,7 +30,7 @@ export interface TabProps {
   icon?: React.ReactNode;
   label?: React.ReactNode;
   onActive?: (tab: Tab) => void;
-  onTouchTap?: (value: any, e: TouchTapEvent, tab: Tab) => void;
+  onTouchTap?: (value: any, e: TouchTapEvent<any>, tab: Tab) => void;
   selected?: boolean;
   style?: React.CSSProperties;
   value?: any;

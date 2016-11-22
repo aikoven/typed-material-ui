@@ -7,8 +7,8 @@ export interface ChipProps {
   className?: string;
   labelColor?: string;
   labelStyle?: React.CSSProperties;
-  onRequestDelete?: TouchTapEventHandler;
-  onTouchTap?: TouchTapEventHandler;
+  onRequestDelete?: TouchTapEventHandler<any>;
+  onTouchTap?: TouchTapEventHandler<any>;
   style?: React.CSSProperties;
 }
 

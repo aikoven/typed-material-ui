@@ -11,12 +11,12 @@ export interface SharedEnhancedButtonProps {
   focusRippleOpacity?: number;
   keyboardFocused?: boolean;
   linkButton?: boolean;
-  onBlur?: React.FocusEventHandler;
-  onFocus?: React.FocusEventHandler;
-  onKeyboardFocus?: (e: React.FocusEvent, isKeyboardFocused: boolean) => void;
-  onKeyDown?: React.KeyboardEventHandler;
-  onKeyUp?: React.KeyboardEventHandler;
-  onTouchTap?: TouchTapEventHandler;
+  onBlur?: React.FocusEventHandler<any>;
+  onFocus?: React.FocusEventHandler<any>;
+  onKeyboardFocus?: (e: React.FocusEvent<any>, isKeyboardFocused: boolean) => void;
+  onKeyDown?: React.KeyboardEventHandler<any>;
+  onKeyUp?: React.KeyboardEventHandler<any>;
+  onTouchTap?: TouchTapEventHandler<any>;
   style?: React.CSSProperties;
   tabIndex?: number;
   target?: string;
@@ -25,7 +25,7 @@ export interface SharedEnhancedButtonProps {
   type?: string;
 }
 
-export interface EnhancedButtonProps extends React.HTMLAttributes, SharedEnhancedButtonProps {
+export interface EnhancedButtonProps extends React.HTMLAttributes<any>, SharedEnhancedButtonProps {
   // container element, <button/>, or <span/>(if disabled link) is the element that get the 'other' properties
   containerElement?: React.ReactNode | string;
   disabled?: boolean;

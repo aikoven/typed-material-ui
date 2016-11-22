@@ -2,5 +2,8 @@
   "name": "typed-material-ui",
   "version": "0.0.0",
   "license": "MIT",
-  "repository": "aikoven/typed-material-ui"
+  "repository": "aikoven/typed-material-ui",
+  "dependencies": {
+    "@types/react": "^0.14.50"
+  }
 }

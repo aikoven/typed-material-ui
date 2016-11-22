@@ -10,7 +10,7 @@ export interface RadioButtonProps {
   inputStyle?: React.CSSProperties;
   labelPosition?: string; // oneOf(['left', 'right'])
   labelStyle?: React.CSSProperties;
-  onCheck?: (e: React.FormEvent, selected: string) => void;
+  onCheck?: (e: React.FormEvent<any>, selected: string) => void;
   style?: React.CSSProperties;
   uncheckedIcon?: React.ReactElement<{ style?: React.CSSProperties }>; // Normally an SvgIcon
   value?: string;
@@ -29,7 +29,7 @@ export interface RadioButtonGroupProps {
   defaultSelected?: string;
   labelPosition?: string; // oneOf(['left', 'right'])
   name: string;
-  onChange?: (e: React.FormEvent, selected: string) => void;
+  onChange?: (e: React.FormEvent<any>, selected: string) => void;
   style?: React.CSSProperties;
   valueSelected?: string;
 }

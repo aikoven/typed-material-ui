@@ -16,12 +16,12 @@ export interface RaisedButtonProps extends SharedEnhancedButtonProps {
   labelPosition?: string; // oneOf(['left', 'right'])
   labelStyle?: React.CSSProperties;
   linkButton?: boolean;
-  onMouseDown?: React.MouseEventHandler;
-  onMouseEnter?: React.MouseEventHandler;
-  onMouseLeave?: React.MouseEventHandler;
-  onMouseUp?: React.MouseEventHandler;
-  onTouchEnd?: React.TouchEventHandler;
-  onTouchStart?: React.TouchEventHandler;
+  onMouseDown?: React.MouseEventHandler<any>;
+  onMouseEnter?: React.MouseEventHandler<any>;
+  onMouseLeave?: React.MouseEventHandler<any>;
+  onMouseUp?: React.MouseEventHandler<any>;
+  onTouchEnd?: React.TouchEventHandler<any>;
+  onTouchStart?: React.TouchEventHandler<any>;
   primary?: boolean;
   rippleStyle?: React.CSSProperties;
   secondary?: boolean;

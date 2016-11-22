@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {TouchTapEvent} from "./common";
 
-export interface SelectFieldProps extends React.Props<SelectField> {
+export interface SelectFieldProps {
   // <DropDownMenu/> is the element that get the 'other' properties
   autoWidth?: boolean;
   disabled?: boolean;
@@ -15,9 +15,9 @@ export interface SelectFieldProps extends React.Props<SelectField> {
   iconStyle?: React.CSSProperties;
   id?: string;
   labelStyle?: React.CSSProperties;
-  onBlur?: React.FocusEventHandler;
-  onChange?: (e: TouchTapEvent, index: number, menuItemValue: any) => void;
-  onFocus?: React.FocusEventHandler;
+  onBlur?: React.FocusEventHandler<any>;
+  onChange?: (e: TouchTapEvent<any>, index: number, menuItemValue: any) => void;
+  onFocus?: React.FocusEventHandler<any>;
   selectFieldRoot?: React.CSSProperties;
   selectedIndex?: number;
   style?: React.CSSProperties;

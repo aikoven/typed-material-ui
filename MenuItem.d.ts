@@ -10,7 +10,7 @@ export interface MenuItemProps extends ListItemProps {
   insetChildren?: boolean;
   leftIcon?: React.ReactElement<any>;
   menuItems?: React.ReactNode;
-  onTouchTap?: TouchTapEventHandler;
+  onTouchTap?: TouchTapEventHandler<any>;
   primaryText?: React.ReactNode;
   rightIcon?: React.ReactElement<any>;
   secondaryText?: React.ReactNode;

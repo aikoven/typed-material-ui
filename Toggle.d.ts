@@ -10,7 +10,7 @@ export interface ToggleProps {
   label?: string;
   labelPosition?: string; // oneOf(['left', 'right'])
   labelStyle?: React.CSSProperties;
-  onToggle?: (e: React.MouseEvent, isInputChecked: boolean) => void;
+  onToggle?: (e: React.MouseEvent<any>, isInputChecked: boolean) => void;
   rippleStyle?: React.CSSProperties;
   style?: React.CSSProperties;
   thumbStyle?: React.CSSProperties;
