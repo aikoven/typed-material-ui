@@ -33,6 +33,7 @@ export interface TextFieldProps {
   underlineStyle?: React.CSSProperties;
   value?: string | number;
 
+  onInput?: React.FormEventHandler<any>;
   min?: string | number;
   max?: string | number;
   step?: string | number;
