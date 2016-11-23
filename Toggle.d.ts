@@ -7,8 +7,8 @@ export interface ToggleProps {
   elementStyle?: React.CSSProperties;
   iconStyle?: React.CSSProperties;
   inputStyle?: React.CSSProperties;
-  label?: string;
-  labelPosition?: string; // oneOf(['left', 'right'])
+  label?: React.ReactNode;
+  labelPosition?: 'left' | 'right';
   labelStyle?: React.CSSProperties;
   onToggle?: (e: React.MouseEvent<any>, isInputChecked: boolean) => void;
   rippleStyle?: React.CSSProperties;
