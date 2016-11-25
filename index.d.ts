@@ -41,7 +41,7 @@ export {default as IconMenu, IconMenuProps} from './IconMenu';
 export {List, ListProps, ListItem, ListItemProps} from './List';
 // export {default as ListItem} from './List/ListItem';
 // export {default as MakeSelectable} from './List/MakeSelectable';
-// export {default as Menu} from './Menu';
+export {default as Menu, MenuProps} from './Menu';
 export {default as MenuItem, MenuItemProps} from './MenuItem';
 export {default as Paper, PaperProps} from './Paper';
 // export {default as Popover} from './Popover';
