@@ -37,6 +37,7 @@ export interface TextFieldProps {
   min?: string | number;
   max?: string | number;
   step?: string | number;
+  autoFocus?: boolean;
 }
 
 export default class TextField extends React.Component<TextFieldProps, {}> {
