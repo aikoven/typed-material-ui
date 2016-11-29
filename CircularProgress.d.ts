@@ -5,9 +5,10 @@ export interface CircularProgressProps {
   innerStyle?: React.CSSProperties;
   max?: number;
   min?: number;
-  mode?: string;
+  mode?: 'determinate' | 'indeterminate';
   size?: number;
   style?: React.CSSProperties;
+  thickness?: number;
   value?: number;
 }
 
