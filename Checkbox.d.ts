@@ -1,5 +1,4 @@
 import * as React from "react";
-import {ReactLink} from "./common";
 
 
 export interface CheckboxProps extends React.Props<Checkbox> {
@@ -10,10 +9,9 @@ export interface CheckboxProps extends React.Props<Checkbox> {
   iconStyle?: React.CSSProperties;
   labelPosition?: 'left' | 'right';
   labelStyle?: React.CSSProperties;
-  onCheck?: (event: React.MouseEvent, checked: boolean) => void;
+  onCheck?: (event: React.MouseEvent<any>, checked: boolean) => void;
   style?: React.CSSProperties;
   uncheckedIcon?: React.ReactElement<{ style?: React.CSSProperties }>; // Normally an SvgIcon
-  valueLink?: ReactLink<boolean>;
 }
 
 export default class Checkbox extends React.Component<CheckboxProps, {}> {

@@ -1,11 +1,5 @@
 import * as React from 'react';
 
-// ReactLink is from "react/addons"
-export interface ReactLink<T> {
-  value: T;
-  requestChange(newValue: T): void;
-}
-
 // What's common between React.TouchEvent and React.MouseEvent
 export interface TouchTapEvent<T> extends React.SyntheticEvent<T> {
   altKey: boolean;
