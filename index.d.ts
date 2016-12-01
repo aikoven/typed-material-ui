@@ -16,7 +16,7 @@ export {
 // export {default as CardMedia} from './Card/CardMedia';
 // export {default as CardTitle} from './Card/CardTitle';
 // export {default as CardText} from './Card/CardText';
-// export {default as Checkbox} from './Checkbox';
+export {default as Checkbox, CheckboxProps} from './Checkbox';
 export {default as Chip, ChipProps} from './Chip';
 export {
   default as CircularProgress,
