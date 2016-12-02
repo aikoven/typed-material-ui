@@ -7,6 +7,7 @@ export interface SelectFieldProps {
   disabled?: boolean;
   errorStyle?: React.CSSProperties;
   errorText?: React.ReactNode;
+  floatingLabelFixed?: boolean;
   floatingLabelStyle?: React.CSSProperties;
   floatingLabelText?: React.ReactNode;
   fullWidth?: boolean;
