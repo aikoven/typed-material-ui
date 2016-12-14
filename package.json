@@ -3,7 +3,15 @@
   "version": "0.0.0",
   "license": "MIT",
   "repository": "aikoven/typed-material-ui",
+  "scripts": {
+    "test": "tsc --noEmit -p tsconfig.json",
+    "lint": "tslint -c tslint.json -e node_modules/**/*.ts **/*.ts"
+  },
   "dependencies": {
     "@types/react": "^0.14.50"
+  },
+  "devDependencies": {
+    "tslint": "^3.15.1",
+    "typescript": "^2.1.4"
   }
 }

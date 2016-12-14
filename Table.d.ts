@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {TouchTapEventHandler} from "./common";
 
 export interface TableProps extends React.Props<Table> {
   allRowsSelected?: boolean;
