@@ -35,6 +35,7 @@ export interface TableRowProps {
   onCellHover?: (e: React.MouseEvent<any>, row: number, column: number) => void;
   onCellHoverExit?: (e: React.MouseEvent<any>, row: number, column: number) => void;
   onRowClick?: (e: React.MouseEvent<any>, row: number) => void;
+  onTouchTap?: TouchTapEventHandler<any>;
   onRowHover?: (e: React.MouseEvent<any>, row: number) => void;
   onRowHoverExit?: (e: React.MouseEvent<any>, row: number) => void;
   rowNumber?: number;
