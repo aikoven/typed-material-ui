@@ -2,11 +2,11 @@ import * as React from 'react';
 
 
 export interface SnackbarProps {
-  action?: string;
+  action?: React.ReactNode;
   autoHideDuration?: number;
   bodyStyle?: React.CSSProperties;
   className?: string;
-  message: string | React.ReactChild;
+  message: React.ReactNode;
   onActionTouchTap?: React.TouchEventHandler<any>;
   onRequestClose?(reason: string): void;
   open: boolean;
