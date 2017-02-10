@@ -12,6 +12,7 @@ export interface MenuProps {
   multiple?: boolean;
   onChange?(e: TouchTapEvent<any>, itemValue: any | any[]): void;
   onEscKeyDown?: React.KeyboardEventHandler<any>;
+  onKeyDown?: React.KeyboardEventHandler<any>;
   onItemTouchTap?(e: TouchTapEvent<any>, item: MenuItem, index: number): void;
   selectedMenuItemStyle?: React.CSSProperties;
   style?: React.CSSProperties;
