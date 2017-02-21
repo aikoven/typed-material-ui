@@ -26,7 +26,7 @@ export {default as DatePicker, DatePickerProps} from './DatePicker';
 export {default as Dialog, DialogProps} from './Dialog';
 export {default as Divider, DividerProps} from './Divider';
 export {default as Drawer, DrawerProps} from './Drawer';
-// export {default as DropDownMenu} from './DropDownMenu';
+export {default as DropDownMenu, DropDownMenuProps} from './DropDownMenu';
 export {default as FlatButton, FlatButtonProps} from './FlatButton';
 export {
   default as FloatingActionButton,
