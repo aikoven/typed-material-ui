@@ -31,6 +31,7 @@ export interface DatePickerProps extends React.Props<DatePicker> {
   defaultValue?: string;
   errorStyle?: React.CSSProperties;
   errorText?: React.ReactNode;
+  floatingLabelFixed?: boolean;
   floatingLabelStyle?: React.CSSProperties;
   floatingLabelText?: React.ReactNode;
   fullWidth?: boolean;
