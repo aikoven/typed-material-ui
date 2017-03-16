@@ -74,7 +74,7 @@ export {
   TableRowColumn, TableRowColumnProps,
 } from './Table';
 export {default as TextField, TextFieldProps} from './TextField';
-// export {default as TimePicker} from './TimePicker';
+export {default as TimePicker} from './TimePicker';
 export {default as Toggle, ToggleProps} from './Toggle';
 export {
   Toolbar, ToolbarProps,
