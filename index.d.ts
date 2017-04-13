@@ -44,7 +44,7 @@ export {List, ListProps, ListItem, ListItemProps} from './List';
 export {default as Menu, MenuProps} from './Menu';
 export {default as MenuItem, MenuItemProps} from './MenuItem';
 export {default as Paper, PaperProps} from './Paper';
-// export {default as Popover} from './Popover';
+export {default as Popover, PopoverProps} from './Popover';
 export {
   RadioButton,
   RadioButtonProps,
