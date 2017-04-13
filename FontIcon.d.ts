@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './common';
 
 export interface FontIconProps extends React.HTMLAttributes<FontIcon> {
   // <span/> is the element that get the 'other' properties

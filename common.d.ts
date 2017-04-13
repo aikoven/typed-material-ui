@@ -21,10 +21,8 @@ export interface Origin {
 import {DOMAttributes} from "react";
 
 declare module "react" {
-  namespace React {
-    interface HTMLAttributes<T> extends DOMAttributes<T> {
-      onTouchTap?: TouchTapEventHandler<T>;
-    }
+  interface HTMLAttributes<T> extends DOMAttributes<T> {
+    onTouchTap?: TouchTapEventHandler<T>;
   }
 }
 

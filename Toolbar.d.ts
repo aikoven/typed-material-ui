@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './common';
 
 export interface ToolbarProps {
   className?: string;
