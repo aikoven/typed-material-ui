@@ -17,3 +17,14 @@ export interface Origin {
   horizontal: 'left' | 'middle' | 'right';
   vertical: 'top' | 'center' | 'bottom';
 }
+
+import {DOMAttributes} from "react";
+
+declare module "react" {
+  namespace React {
+    interface HTMLAttributes<T> extends DOMAttributes<T> {
+      onTouchTap?: TouchTapEventHandler<T>;
+    }
+  }
+}
+
