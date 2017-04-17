@@ -9,6 +9,7 @@ export interface MenuProps {
   initiallyKeyboardFocused?: boolean;
   listStyle?: React.CSSProperties;
   maxHeight?: number;
+  menuItemStyle?: React.CSSProperties;
   multiple?: boolean;
   onChange?(e: TouchTapEvent<any>, itemValue: any | any[]): void;
   onEscKeyDown?: React.KeyboardEventHandler<any>;
