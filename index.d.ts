@@ -57,11 +57,13 @@ export {default as SelectField, SelectFieldProps} from './SelectField';
 export {default as Slider, SliderProps} from './Slider';
 export {default as Subheader, SubheaderProps} from './Subheader';
 // export {default as SvgIcon} from './SvgIcon';
-// export {default as Step} from './Stepper/Step';
-// export {default as StepButton} from './Stepper/StepButton';
-// export {default as StepContent} from './Stepper/StepContent';
-// export {default as StepLabel} from './Stepper/StepLabel';
-// export {default as Stepper} from './Stepper/Stepper';
+export {
+  Stepper, StepperProps,
+  Step, StepProps,
+  StepButton, StepButtonProps,
+  StepContent, StepContentProps,
+  StepLabel, StepLabelProps,
+} from './Stepper';
 export {default as Snackbar, SnackbarProps} from './Snackbar';
 export {Tabs, Tab} from './Tabs';
 export {
