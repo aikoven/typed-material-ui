@@ -1,8 +1,7 @@
-import * as React from "react";
+import * as React from 'react';
 
 
-
-export interface BadgeProps extends React.Props<Badge> {
+export interface BadgeProps {
   badgeContent: React.ReactNode;
   badgeStyle?: React.CSSProperties;
   className?: string;
@@ -11,5 +10,7 @@ export interface BadgeProps extends React.Props<Badge> {
   style?: React.CSSProperties;
 }
 
-export default class Badge extends React.Component<BadgeProps, {}> {
+export class Badge extends React.Component<BadgeProps, {}> {
 }
+
+export default Badge;

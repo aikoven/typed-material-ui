@@ -1,12 +1,14 @@
-import * as React from "react";
-import {Origin} from "./common";
+import * as React from 'react';
 
-interface PopoverAnimationProps {
+import {Origin} from './common';
+
+
+export interface PopoverAnimationProps {
   open: boolean;
   style?: React.CSSProperties;
 }
 
-interface PopoverProps {
+export interface PopoverProps {
   anchorEl?: Element;
   anchorOrigin?: Origin;
   animated?: boolean;
@@ -21,5 +23,8 @@ interface PopoverProps {
   useLayerForClickAway?: boolean;
   zDepth?: number;
 }
-export default class Popover extends React.Component<PopoverProps, {}>{
+
+export class Popover extends React.Component<PopoverProps, {}> {
 }
+
+export default Popover;

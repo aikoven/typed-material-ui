@@ -1,18 +1,19 @@
 import * as React from 'react';
+import {EnhancedSwitchProps} from "./internal/EnhancedSwitch";
 
 
-export interface RadioButtonProps {
+export interface RadioButtonProps extends EnhancedSwitchProps {
   // <EnhancedSwitch/> is element that get the 'other' properties
   checked?: boolean;
-  checkedIcon?: React.ReactElement<{ style?: React.CSSProperties }>; // Normally an SvgIcon
+  checkedIcon?: React.ReactElement<any>;
   disabled?: boolean;
   iconStyle?: React.CSSProperties;
   inputStyle?: React.CSSProperties;
-  labelPosition?: string; // oneOf(['left', 'right'])
+  labelPosition?: 'left' | 'right';
   labelStyle?: React.CSSProperties;
-  onCheck?: (e: React.FormEvent<any>, selected: string) => void;
+  onCheck?: (event: React.MouseEvent<any>, checked: boolean) => void;
   style?: React.CSSProperties;
-  uncheckedIcon?: React.ReactElement<{ style?: React.CSSProperties }>; // Normally an SvgIcon
+  uncheckedIcon?: React.ReactElement<any>;
   value?: string;
 }
 
@@ -21,20 +22,20 @@ export class RadioButton extends React.Component<RadioButtonProps, {}> {
   getValue(): string;
 }
 
-type RadioButtonElement = React.ComponentElement<RadioButtonProps, RadioButton>; 
+export default RadioButton;
 
 export interface RadioButtonGroupProps {
-  children?: RadioButtonElement | RadioButtonElement[],
   className?: string;
-  defaultSelected?: string;
-  labelPosition?: string; // oneOf(['left', 'right'])
+  defaultSelected?: any;
+  labelPosition?: 'left' | 'right';
   name: string;
-  onChange?: (e: React.FormEvent<any>, selected: string) => void;
+  onChange?: (event: React.FormEvent<any>, selected: string) => void;
   style?: React.CSSProperties;
   valueSelected?: string;
 }
 
-export class RadioButtonGroup extends React.Component<RadioButtonGroupProps, {}> {
+export class RadioButtonGroup
+extends React.Component<RadioButtonGroupProps, {}> {
   clearValue(): void;
   getSelectedValue(): string;
   setSelectedValue(newSelectionValue: string): void;

@@ -1,20 +1,36 @@
 import * as React from 'react';
-import {TouchTapEvent} from "./common";
+
+import {Origin, TouchTapEvent} from './common';
+import {PopoverAnimationProps} from './Popover';
+
 
 export interface DropDownMenuProps {
+  anchorOrigin?: Origin;
   animated?: boolean;
+  animation?: React.ComponentClass<PopoverAnimationProps>;
   autoWidth?: boolean;
   className?: string;
   disabled?: boolean;
+  iconButton?: React.ReactNode;
   iconStyle?: React.CSSProperties;
   labelStyle?: React.CSSProperties;
+  listStyle?: React.CSSProperties;
   maxHeight?: number;
+  menuItemStyle?: React.CSSProperties;
   menuStyle?: React.CSSProperties;
-  onChange?: (e: TouchTapEvent<any>, index: number, menuItemValue: any) => void;
+  multiple?: boolean;
+  onChange?: (event: TouchTapEvent<any>, key: number, value: any) => void;
+  onClose?: () => void;
   openImmediately?: boolean;
+  selectedMenuItemStyle?: React.CSSProperties;
+  selectionRenderer?: (value: any) => any;
   style?: React.CSSProperties;
+  targetOrigin?: Origin;
   underlineStyle?: React.CSSProperties;
   value?: any;
 }
 
-export default class DropDownMenu extends React.Component<DropDownMenuProps, {}> {}
+export class DropDownMenu extends React.Component<DropDownMenuProps, {}> {
+}
+
+export default DropDownMenu;

@@ -1,5 +1,6 @@
 import * as React from 'react';
-import {SharedEnhancedButtonProps} from "./internal/EnhancedButton";
+
+import {SharedEnhancedButtonProps} from './internal/EnhancedButton';
 
 
 export interface FloatingActionButtonProps extends SharedEnhancedButtonProps {
@@ -11,7 +12,6 @@ export interface FloatingActionButtonProps extends SharedEnhancedButtonProps {
   href?: string;
   iconClassName?: string;
   iconStyle?: React.CSSProperties;
-  linkButton?: boolean;
   mini?: boolean;
   onMouseDown?: React.MouseEventHandler<any>;
   onMouseEnter?: React.MouseEventHandler<any>;
@@ -19,9 +19,14 @@ export interface FloatingActionButtonProps extends SharedEnhancedButtonProps {
   onMouseUp?: React.MouseEventHandler<any>;
   onTouchEnd?: React.TouchEventHandler<any>;
   onTouchStart?: React.TouchEventHandler<any>;
+  onTouchTap?: React.TouchEventHandler<any>;
   secondary?: boolean;
   style?: React.CSSProperties;
   zDepth?: number;
 }
-export default class FloatingActionButton extends React.Component<FloatingActionButtonProps, {}> {
+
+export class FloatingActionButton
+extends React.Component<FloatingActionButtonProps, {}> {
 }
+
+export default FloatingActionButton;

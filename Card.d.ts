@@ -1,13 +1,14 @@
 import * as React from 'react';
-import {PaperProps} from "./Paper";
+
+import {PaperProps} from './Paper';
 
 
-export interface CardProps extends React.Props<Card>, PaperProps {
-  actAsExpander?: boolean;
+export interface CardProps extends PaperProps {
+  containerStyle?: React.CSSProperties;
   expandable?: boolean;
   expanded?: boolean;
   initiallyExpanded?: boolean;
-  onExpandChange?(isExpanded: boolean): void;
+  onExpandChange?: (newExpandedState: boolean) => void;
   showExpandableButton?: boolean;
   style?: React.CSSProperties;
 }
@@ -15,7 +16,9 @@ export interface CardProps extends React.Props<Card>, PaperProps {
 export class Card extends React.Component<CardProps, {}> {
 }
 
-export interface CardActionsProps extends React.Props<CardActions> {
+export default Card;
+
+export interface CardActionsProps {
   actAsExpander?: boolean;
   expandable?: boolean;
   showExpandableButton?: boolean;
@@ -25,19 +28,12 @@ export interface CardActionsProps extends React.Props<CardActions> {
 export class CardActions extends React.Component<CardActionsProps, {}> {
 }
 
-export interface CardExpandableProps extends React.Props<CardExpandable> {
-  expanded?: boolean;
-  onExpanding?: (isExpanded: boolean) => void;
-  style?: React.CSSProperties;
-}
-
-export class CardExpandable extends React.Component<CardExpandableProps, {}> {
-}
-
-export interface CardHeaderProps extends React.Props<CardHeader> {
+export interface CardHeaderProps {
   actAsExpander?: boolean;
   avatar?: React.ReactNode;
+  closeIcon?: React.ReactNode;
   expandable?: boolean;
+  openIcon?: React.ReactNode;
   showExpandableButton?: boolean;
   style?: React.CSSProperties;
   subtitle?: React.ReactNode;
@@ -52,7 +48,7 @@ export interface CardHeaderProps extends React.Props<CardHeader> {
 export class CardHeader extends React.Component<CardHeaderProps, {}> {
 }
 
-export interface CardMediaProps extends React.Props<CardMedia> {
+export interface CardMediaProps {
   actAsExpander?: boolean;
   expandable?: boolean;
   mediaStyle?: React.CSSProperties;
@@ -62,19 +58,21 @@ export interface CardMediaProps extends React.Props<CardMedia> {
   overlayStyle?: React.CSSProperties;
   style?: React.CSSProperties;
 }
+
 export class CardMedia extends React.Component<CardMediaProps, {}> {
 }
 
-export interface CardTextProps extends React.Props<CardText> {
+export interface CardTextProps {
   actAsExpander?: boolean;
   color?: string;
   expandable?: boolean;
   style?: React.CSSProperties;
 }
+
 export class CardText extends React.Component<CardTextProps, {}> {
 }
 
-export interface CardTitleProps extends React.Props<CardTitle> {
+export interface CardTitleProps {
   actAsExpander?: boolean;
   expandable?: boolean;
   showExpandableButton?: boolean;
@@ -86,5 +84,6 @@ export interface CardTitleProps extends React.Props<CardTitle> {
   titleColor?: string;
   titleStyle?: React.CSSProperties;
 }
+
 export class CardTitle extends React.Component<CardTitleProps, {}> {
 }

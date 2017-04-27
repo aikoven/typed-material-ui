@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import {SharedEnhancedButtonProps} from "./internal/EnhancedButton";
+import {SharedEnhancedButtonProps} from './internal/EnhancedButton';
 
 
 export interface StepProps {
@@ -9,7 +9,9 @@ export interface StepProps {
   disabled?: boolean;
   style?: React.CSSProperties;
 }
-export class Step extends React.Component<StepProps, {}> {}
+
+export class Step extends React.Component<StepProps, {}> {
+}
 
 export interface StepButtonProps extends SharedEnhancedButtonProps {
   active?: boolean;
@@ -21,14 +23,18 @@ export interface StepButtonProps extends SharedEnhancedButtonProps {
   onTouchStart?: React.TouchEventHandler<any>;
   style?: React.CSSProperties;
 }
-export class StepButton extends React.Component<StepButtonProps, {}> {}
+
+export class StepButton extends React.Component<StepButtonProps, {}> {
+}
 
 export interface StepContentProps {
   active?: boolean;
   last?: boolean;
   style?: React.CSSProperties;
 }
-export class StepContent extends React.Component<StepContentProps, {}> {}
+
+export class StepContent extends React.Component<StepContentProps, {}> {
+}
 
 export interface StepLabelProps {
   active?: boolean;
@@ -38,7 +44,9 @@ export interface StepLabelProps {
   iconContainerStyle?: React.CSSProperties;
   style?: React.CSSProperties;
 }
-export class StepLabel extends React.Component<StepLabelProps, {}> {}
+
+export class StepLabel extends React.Component<StepLabelProps, {}> {
+}
 
 export interface StepperProps {
   activeStep?: number;
@@ -46,4 +54,8 @@ export interface StepperProps {
   orientation?: 'horizontal' | 'vertical';
   style?: React.CSSProperties;
 }
-export class Stepper extends React.Component<StepperProps, {}> {}
+
+export class Stepper extends React.Component<StepperProps, {}> {
+}
+
+export default Stepper;

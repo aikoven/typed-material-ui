@@ -1,20 +1,29 @@
 import * as React from 'react';
 
-export interface CheckboxProps {
+import {ReactLink} from './common';
+import {EnhancedSwitchProps} from './internal/EnhancedSwitch';
+
+
+export interface CheckboxProps extends EnhancedSwitchProps {
   checked?: boolean;
-  checkedIcon?: React.ReactElement<{style?: React.CSSProperties}>;
+  checkedIcon?: React.ReactElement<any>;
   defaultChecked?: boolean;
   disabled?: boolean;
   iconStyle?: React.CSSProperties;
+  inputStyle?: React.CSSProperties;
   label?: React.ReactNode;
   labelPosition?: 'left' | 'right';
   labelStyle?: React.CSSProperties;
-  onCheck?: (event: React.MouseEvent<any>, checked: boolean) => void;
+  onCheck?: (event: React.MouseEvent<any>,
+             isInputChecked: boolean) => void;
   style?: React.CSSProperties;
-  uncheckedIcon?: React.ReactElement<{style?: React.CSSProperties}>;
+  uncheckedIcon?: React.ReactElement<any>;
+  valueLink?: ReactLink<boolean>;
 }
 
-export default class Checkbox extends React.Component<CheckboxProps, {}> {
+export class Checkbox extends React.Component<CheckboxProps, {}> {
   isChecked(): void;
   setChecked(newCheckedValue: boolean): void;
 }
+
+export default Checkbox;

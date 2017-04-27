@@ -1,7 +1,8 @@
 import * as React from 'react';
 
+
 export interface DialogProps {
-  actions?: React.ReactElement<any>[];
+  actions?: React.ReactNode[];
   actionsContainerClassName?: string;
   actionsContainerStyle?: React.CSSProperties;
   autoDetectWindowHeight?: boolean;
@@ -23,5 +24,7 @@ export interface DialogProps {
   titleStyle?: React.CSSProperties;
 }
 
-export default class Dialog extends React.Component<DialogProps, {}> {
+export class Dialog extends React.Component<DialogProps, {}> {
 }
+
+export default Dialog;

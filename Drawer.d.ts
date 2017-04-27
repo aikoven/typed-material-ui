@@ -1,13 +1,13 @@
 import * as React from 'react';
 
 
-export interface DrawerProps extends React.Props<Drawer> {
+export interface DrawerProps {
   className?: string;
   containerClassName?: string;
   containerStyle?: React.CSSProperties;
   disableSwipeToOpen?: boolean;
   docked?: boolean;
-  onRequestChange?(open: boolean, reason: string): void;
+  onRequestChange?: (open: boolean, reason: string) => void;
   open?: boolean;
   openSecondary?: boolean;
   overlayClassName?: string;
@@ -18,5 +18,7 @@ export interface DrawerProps extends React.Props<Drawer> {
   zDepth?: number;
 }
 
-export default class Drawer extends React.Component<DrawerProps, {}> {
+export class Drawer extends React.Component<DrawerProps, {}> {
 }
+
+export default Drawer;

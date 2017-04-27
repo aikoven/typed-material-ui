@@ -1,6 +1,7 @@
-import * as React from "react";
+import * as React from 'react';
 
-export interface TimePickerProps extends React.Props<TimePicker> {
+
+export interface TimePickerProps {
   // <TextField/> is element that get the 'other' properties
   autoOk?: boolean;
   cancelLabel?: React.ReactNode;
@@ -8,9 +9,9 @@ export interface TimePickerProps extends React.Props<TimePicker> {
   dialogBodyStyle?: React.CSSProperties;
   dialogStyle?: React.CSSProperties;
   disabled?: boolean;
-  format?: "ampm" | "24hr";
+  format?: 'ampm' | '24hr';
   okLabel?: React.ReactNode;
-  onChange?: (e: any, time: Date) => void;
+  onChange?: (event: any, time: Date) => void;
   onDismiss?: () => void;
   onFocus?: React.FocusEventHandler<any>;
   onShow?: () => void;
@@ -38,8 +39,8 @@ export interface TimePickerProps extends React.Props<TimePicker> {
   name?: string;
   onBlur?: React.FocusEventHandler<any>;
   onKeyDown?: React.KeyboardEventHandler<any>;
-  rows?: number,
-  rowsMax?: number,
+  rows?: number;
+  rowsMax?: number;
   textareaStyle?: React.CSSProperties;
   type?: string;
   underlineDisabledStyle?: React.CSSProperties;
@@ -48,7 +49,9 @@ export interface TimePickerProps extends React.Props<TimePicker> {
   underlineStyle?: React.CSSProperties;
 }
 
-export default class TimePicker extends React.Component<TimePickerProps, {}> {
+export class TimePicker extends React.Component<TimePickerProps, {}> {
   focus(): void;
   openDialog(): void;
 }
+
+export default TimePicker;

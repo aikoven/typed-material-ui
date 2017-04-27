@@ -1,10 +1,12 @@
 import * as React from 'react';
-import {TouchTapEventHandler} from "./common";
+
+import {TouchTapEventHandler} from './common';
 
 
 export interface ChipProps {
   backgroundColor?: string;
   className?: string;
+  containerElement?: React.ReactElement<any> | string;
   labelColor?: string;
   labelStyle?: React.CSSProperties;
   onRequestDelete?: TouchTapEventHandler<any>;
@@ -12,5 +14,7 @@ export interface ChipProps {
   style?: React.CSSProperties;
 }
 
-export default class Chip extends React.Component<ChipProps, {}> {
+export class Chip extends React.Component<ChipProps, {}> {
 }
+
+export default Chip;

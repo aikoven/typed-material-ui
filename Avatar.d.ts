@@ -11,5 +11,7 @@ export interface AvatarProps {
   style?: React.CSSProperties;
 }
 
-export default class Avatar extends React.Component<AvatarProps, {}> {
+export class Avatar extends React.Component<AvatarProps, {}> {
 }
+
+export default Avatar;

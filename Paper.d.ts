@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './common';
 
+
 export interface PaperProps extends React.HTMLAttributes<Paper> {
   circle?: boolean;
   rounded?: boolean;
@@ -9,5 +10,7 @@ export interface PaperProps extends React.HTMLAttributes<Paper> {
   zDepth?: number;
 }
 
-export default class Paper extends React.Component<PaperProps, {}> {
+export class Paper extends React.Component<PaperProps, {}> {
 }
+
+export default Paper;
