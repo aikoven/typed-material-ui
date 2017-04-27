@@ -61,9 +61,9 @@ export interface TableRowColumnProps {
   columnNumber?: number;
   hoverable?: boolean;
   key?: string;
-  onClick?: (event: React.MouseEvent<{}>, column: number) => void;
-  onHover?: (event: React.MouseEvent<{}>, column: number) => void;
-  onHoverExit?: (event: React.MouseEvent<{}>, column: number) => void;
+  onClick?: (event: React.MouseEvent<any>, column: number) => void;
+  onHover?: (event: React.MouseEvent<any>, column: number) => void;
+  onHoverExit?: (event: React.MouseEvent<any>, column: number) => void;
   style?: React.CSSProperties;
 
   // useful attributes passed to <td/>

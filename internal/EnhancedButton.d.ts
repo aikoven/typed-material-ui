@@ -17,7 +17,7 @@ export interface SharedEnhancedButtonProps {
   onFocus?: React.FocusEventHandler<any>;
   onKeyDown?: React.KeyboardEventHandler<any>;
   onKeyUp?: React.KeyboardEventHandler<any>;
-  onKeyboardFocus?: (e: React.FocusEvent<{}>,
+  onKeyboardFocus?: (e: React.FocusEvent<any>,
                     isKeyboardFocused: boolean) => void;
   onTouchTap?: TouchTapEventHandler<any>;
   style?: React.CSSProperties;

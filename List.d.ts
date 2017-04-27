@@ -30,7 +30,7 @@ export interface ListItemProps extends EnhancedButtonProps {
   nestedItems?: React.ReactElement<ListItemProps>[];
   nestedLevel?: number;
   nestedListStyle?: React.CSSProperties;
-  onKeyboardFocus?: (event: React.FocusEvent<{}>,
+  onKeyboardFocus?: (event: React.FocusEvent<any>,
                      isKeyboardFocused: boolean) => void;
   onMouseEnter?: React.MouseEventHandler<any>;
   onMouseLeave?: React.MouseEventHandler<any>;
