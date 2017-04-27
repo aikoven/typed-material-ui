@@ -20,6 +20,7 @@ export interface Origin {
 }
 
 export type Corners = 'bottom-left' | 'bottom-right' | 'top-left' | 'top-right';
+
 export type CornersAndCenter = 'bottom-center' | 'bottom-left' |
   'bottom-right' | 'top-center' | 'top-left' | 'top-right';
 
@@ -28,9 +29,9 @@ export interface ReactLink<T> {
   requestChange(newValue: T): void;
 }
 
-import {DOMAttributes} from "react";
+import {DOMAttributes} from 'react';
 
-declare module "react" {
+declare module 'react' {
   namespace React {
     interface HTMLAttributes<T> extends DOMAttributes<T> {
       onTouchTap?: TouchTapEventHandler<T>;

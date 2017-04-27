@@ -1,4 +1,4 @@
-import {RawTheme} from "../../styles";
+import {RawTheme} from '../index';
 
-declare const theme: RawTheme;
-export default theme;
+declare const darkBaseTheme: RawTheme;
+export default darkBaseTheme;

@@ -9,7 +9,7 @@ export interface SnackbarProps {
   contentStyle?: React.CSSProperties;
   message: React.ReactNode;
   onActionTouchTap?: React.TouchEventHandler<any>;
-  onRequestClose?(reason: string): void;
+  onRequestClose?: (reason: string) => void;
   open: boolean;
   style?: React.CSSProperties;
 }

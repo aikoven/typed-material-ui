@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import {MuiTheme} from '../styles';
+import {MuiTheme} from './index';
 
 
 interface MuiThemeProviderProps {

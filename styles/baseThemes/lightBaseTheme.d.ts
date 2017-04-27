@@ -1,4 +1,4 @@
-import {RawTheme} from "../../styles";
+import {RawTheme} from '../index';
 
-declare const theme: RawTheme;
-export default theme;
+declare const lightBaseTheme: RawTheme;
+export default lightBaseTheme;

@@ -2,11 +2,12 @@ import * as React from 'react';
 
 import {Origin, TouchTapEventHandler} from './common';
 import {ListItemProps} from './List';
+import {PopoverAnimationProps} from './Popover';
 
 
 export interface MenuItemProps extends ListItemProps {
   anchorOrigin?: Origin;
-  // TODO: animation?:
+  animation?: React.ComponentClass<PopoverAnimationProps>;
   checked?: boolean;
   desktop?: boolean;
   disabled?: boolean;

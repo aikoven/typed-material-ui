@@ -17,7 +17,7 @@ export interface GridTileProps {
   actionIcon?: React.ReactElement<any>;
   actionPosition?: 'left' | 'right';
   cols?: number;
-  containerElement?: string | React.ReactElement<any>;
+  containerElement?: React.ReactElement<any> | string;
   rows?: number;
   style?: React.CSSProperties;
   subtitle?: React.ReactNode;

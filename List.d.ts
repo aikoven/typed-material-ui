@@ -2,11 +2,9 @@ import * as React from 'react';
 
 import {TouchTapEventHandler} from './common';
 import {EnhancedButtonProps} from './internal/EnhancedButton';
-import {PaperProps} from './Paper';
 
 
-// TODO: extends from Paper?
-export interface ListProps extends PaperProps {
+export interface ListProps {
   // <Paper/> is the element that get the 'other' properties
   style?: React.CSSProperties;
 }

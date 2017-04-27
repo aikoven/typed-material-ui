@@ -16,7 +16,7 @@ export {
   default as CircularProgress,
   CircularProgressProps
 } from './CircularProgress';
-export {default as DatePicker, DatePickerProps} from './DatePicker';
+// export {default as DatePicker, DatePickerProps} from './DatePicker';
 export {default as Dialog, DialogProps} from './Dialog';
 export {default as Divider, DividerProps} from './Divider';
 export {default as Drawer, DrawerProps} from './Drawer';
@@ -41,7 +41,7 @@ export {default as List, ListProps, ListItem, ListItemProps} from './List';
 export {default as Menu, MenuProps} from './Menu';
 export {default as MenuItem, MenuItemProps} from './MenuItem';
 export {default as Paper, PaperProps} from './Paper';
-// export {default as Popover} from './Popover';
+export {default as Popover} from './Popover';
 export {
   RadioButton, RadioButtonProps,
   RadioButtonGroup, RadioButtonGroupProps,
@@ -71,7 +71,7 @@ export {
   TableRowColumn, TableRowColumnProps,
 } from './Table';
 export {default as TextField, TextFieldProps} from './TextField';
-export {default as TimePicker, TimePickerProps} from './TimePicker';
+// export {default as TimePicker, TimePickerProps} from './TimePicker';
 export {default as Toggle, ToggleProps} from './Toggle';
 export {
   default as Toolbar, ToolbarProps,
@@ -79,6 +79,7 @@ export {
   ToolbarSeparator, ToolbarSeparatorProps,
   ToolbarTitle, ToolbarTitleProps,
 } from './Toolbar';
+
 
 import './styles';
 import './styles/muiThemeable';

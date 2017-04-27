@@ -10,7 +10,7 @@ export interface TimePickerProps {
   disabled?: boolean;
   format?: "ampm" | "24hr";
   okLabel?: React.ReactNode;
-  onChange?: (e: any, time: Date) => void;
+  onChange?: (event: any, time: Date) => void;
   onDismiss?: () => void;
   onFocus?: React.FocusEventHandler<any>;
   onShow?: () => void;
@@ -38,8 +38,8 @@ export interface TimePickerProps {
   name?: string;
   onBlur?: React.FocusEventHandler<any>;
   onKeyDown?: React.KeyboardEventHandler<any>;
-  rows?: number,
-  rowsMax?: number,
+  rows?: number;
+  rowsMax?: number;
   textareaStyle?: React.CSSProperties;
   type?: string;
   underlineDisabledStyle?: React.CSSProperties;

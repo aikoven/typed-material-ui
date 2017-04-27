@@ -3,6 +3,7 @@ import * as React from 'react';
 import {Origin, TouchTapEvent, TouchTapEventHandler} from './common';
 import {IconButtonProps} from './IconButton';
 import MenuItem from './MenuItem';
+import {PopoverAnimationProps} from './Popover';
 
 
 // TODO: Receive <Menu/> props
@@ -10,7 +11,7 @@ export interface IconMenuProps {
   // <Menu/> is the element that get the 'other' properties
   anchorOrigin?: Origin;
   animated?: boolean;
-  // TODO: animation?:
+  animation?: React.ComponentClass<PopoverAnimationProps>;
   className?: string;
   iconButtonElement: React.ReactElement<IconButtonProps>;
   iconStyle?: React.CSSProperties;

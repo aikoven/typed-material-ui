@@ -8,7 +8,7 @@ export interface CardProps extends PaperProps {
   expandable?: boolean;
   expanded?: boolean;
   initiallyExpanded?: boolean;
-  onExpandChange?(newExpandedState: boolean): void;
+  onExpandChange?: (newExpandedState: boolean) => void;
   showExpandableButton?: boolean;
   style?: React.CSSProperties;
 }

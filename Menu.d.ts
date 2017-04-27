@@ -12,7 +12,6 @@ export interface MenuProps<MenuValue> {
   maxHeight?: number;
   menuItemStyle?: React.CSSProperties;
   multiple?: boolean;
-  // TODO: check signature of e
   onChange?: (event: TouchTapEvent<any>, value: MenuValue) => void;
   onEscKeyDown?: React.KeyboardEventHandler<any>;
   onKeyDown?: React.KeyboardEventHandler<any>;
@@ -27,7 +26,7 @@ export interface MenuProps<MenuValue> {
   width?: string | number;
 }
 
-export class Menu extends React.Component<MenuProps<any>, {}> {
+export class Menu extends React.Component<MenuProps<any | any[]>, {}> {
 }
 
 export default Menu;

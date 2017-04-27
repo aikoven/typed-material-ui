@@ -1,12 +1,13 @@
 import * as React from 'react';
 
 import {Origin, TouchTapEvent} from './common';
+import {PopoverAnimationProps} from './Popover';
 
 
 export interface DropDownMenuProps {
   anchorOrigin?: Origin;
   animated?: boolean;
-  // TODO: animation: () => void;
+  animation?: React.ComponentClass<PopoverAnimationProps>;
   autoWidth?: boolean;
   className?: string;
   disabled?: boolean;
@@ -19,7 +20,7 @@ export interface DropDownMenuProps {
   menuStyle?: React.CSSProperties;
   multiple?: boolean;
   onChange?: (event: TouchTapEvent<any>, key: number, value: any) => void;
-  // TODO: onClose?: () => void;
+  onClose?: () => void;
   openImmediately?: boolean;
   selectedMenuItemStyle?: React.CSSProperties;
   selectionRenderer?: (value: any) => void;

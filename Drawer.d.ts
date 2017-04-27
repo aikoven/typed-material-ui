@@ -7,7 +7,7 @@ export interface DrawerProps {
   containerStyle?: React.CSSProperties;
   disableSwipeToOpen?: boolean;
   docked?: boolean;
-  onRequestChange?(open: boolean, reason: string): void;
+  onRequestChange?: (open: boolean, reason: string) => void;
   open?: boolean;
   openSecondary?: boolean;
   overlayClassName?: string;

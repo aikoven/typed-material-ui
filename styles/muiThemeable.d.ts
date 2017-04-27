@@ -1,5 +1,6 @@
-import {ComponentClass, StatelessComponent} from "react";
-import {MuiTheme} from "../styles";
+import {ComponentClass, StatelessComponent} from 'react';
+
+import {MuiTheme} from './index';
 
 
 type DecoratedComponent<P> = ComponentClass<P> | StatelessComponent<P>;
