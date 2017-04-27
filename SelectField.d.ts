@@ -40,5 +40,7 @@ export interface SelectFieldProps {
   value?: any;
 }
 
-export default class SelectField extends React.Component<SelectFieldProps, {}> {
+export class SelectField extends React.Component<SelectFieldProps, {}> {
 }
+
+export default SelectField;

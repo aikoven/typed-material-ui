@@ -11,8 +11,10 @@ export interface ListProps extends PaperProps {
   style?: React.CSSProperties;
 }
 
-export default class List extends React.Component<ListProps, {}> {
+export class List extends React.Component<ListProps, {}> {
 }
+
+export default List;
 
 export interface ListItemProps extends EnhancedButtonProps {
   // <EnhancedButton/> is the element that get the 'other' properties

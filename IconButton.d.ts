@@ -29,5 +29,7 @@ export interface IconButtonProps extends SharedEnhancedButtonProps {
   touch?: boolean;
 }
 
-export default class IconButton extends React.Component<IconButtonProps, {}> {
+export class IconButton extends React.Component<IconButtonProps, {}> {
 }
+
+export default IconButton;

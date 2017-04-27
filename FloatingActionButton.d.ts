@@ -25,5 +25,8 @@ export interface FloatingActionButtonProps extends SharedEnhancedButtonProps {
   zDepth?: number;
 }
 
-export default class FloatingActionButton extends React.Component<FloatingActionButtonProps, {}> {
+export class FloatingActionButton
+extends React.Component<FloatingActionButtonProps, {}> {
 }
+
+export default FloatingActionButton;

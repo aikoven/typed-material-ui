@@ -34,5 +34,7 @@ export interface RaisedButtonProps extends SharedEnhancedButtonProps {
   style?: React.CSSProperties;
 }
 
-export default class RaisedButton extends React.Component<RaisedButtonProps, {}> {
+export class RaisedButton extends React.Component<RaisedButtonProps, {}> {
 }
+
+export default RaisedButton;

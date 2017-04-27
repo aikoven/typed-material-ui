@@ -29,5 +29,7 @@ export interface FlatButtonProps extends SharedEnhancedButtonProps {
   style?: React.CSSProperties;
 }
 
-export default class FlatButton extends React.Component<FlatButtonProps, {}> {
+export class FlatButton extends React.Component<FlatButtonProps, {}> {
 }
+
+export default FlatButton;

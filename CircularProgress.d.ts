@@ -13,5 +13,8 @@ export interface CircularProgressProps {
   value?: number;
 }
 
-export default class CircularProgress extends React.Component<CircularProgressProps, {}> {
+export class CircularProgress
+extends React.Component<CircularProgressProps, {}> {
 }
+
+export default CircularProgress;

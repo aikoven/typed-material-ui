@@ -42,10 +42,12 @@ export interface TextFieldProps {
   step?: string | number;
 }
 
-export default class TextField extends React.Component<TextFieldProps, {}> {
+export class TextField extends React.Component<TextFieldProps, {}> {
   blur(): void;
   clearValue(): void;
   focus(): void;
   getValue(): string;
   getInputNode(): HTMLInputElement | HTMLTextAreaElement;
 }
+
+export default TextField;

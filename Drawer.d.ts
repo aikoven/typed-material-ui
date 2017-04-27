@@ -18,5 +18,7 @@ export interface DrawerProps {
   zDepth?: number;
 }
 
-export default class Drawer extends React.Component<DrawerProps, {}> {
+export class Drawer extends React.Component<DrawerProps, {}> {
 }
+
+export default Drawer;

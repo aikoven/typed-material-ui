@@ -9,5 +9,7 @@ export interface PaperProps extends React.HTMLAttributes<any> {
   zDepth?: number;
 }
 
-export default class Paper extends React.Component<PaperProps, {}> {
+export class Paper extends React.Component<PaperProps, {}> {
 }
+
+export default Paper;

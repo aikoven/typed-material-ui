@@ -48,7 +48,9 @@ export interface TimePickerProps {
   underlineStyle?: React.CSSProperties;
 }
 
-export default class TimePicker extends React.Component<TimePickerProps, {}> {
+export class TimePicker extends React.Component<TimePickerProps, {}> {
   focus(): void;
   openDialog(): void;
 }
+
+export default TimePicker;

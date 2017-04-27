@@ -23,5 +23,7 @@ export interface MenuItemProps extends ListItemProps {
   value?: any;
 }
 
-export default class MenuItem extends React.Component<MenuItemProps, {}> {
+export class MenuItem extends React.Component<MenuItemProps, {}> {
 }
+
+export default MenuItem;

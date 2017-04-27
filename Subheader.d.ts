@@ -6,5 +6,7 @@ export interface SubheaderProps {
   style?: React.CSSProperties;
 }
 
-export default class Subheader extends React.Component<SubheaderProps, {}> {
+export class Subheader extends React.Component<SubheaderProps, {}> {
 }
+
+export default Subheader;

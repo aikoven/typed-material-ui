@@ -13,8 +13,10 @@ export interface CardProps extends PaperProps {
   style?: React.CSSProperties;
 }
 
-export default class Card extends React.Component<CardProps, {}> {
+export class Card extends React.Component<CardProps, {}> {
 }
+
+export default Card;
 
 export interface CardActionsProps {
   actAsExpander?: boolean;

@@ -51,5 +51,7 @@ export interface DatePickerProps {
   underlineStyle?: React.CSSProperties;
 }
 
-export default class DatePicker extends React.Component<DatePickerProps, {}> {
+export class DatePicker extends React.Component<DatePickerProps, {}> {
 }
+
+export default DatePicker;

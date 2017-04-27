@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 
-export interface FontIconProps extends React.HTMLAttributes<FontIcon> {
+export interface FontIconProps extends React.HTMLAttributes<any> {
   // <span/> is the element that get the 'other' properties
   color?: string;
   hoverColor?: string;
@@ -10,5 +10,7 @@ export interface FontIconProps extends React.HTMLAttributes<FontIcon> {
   style?: React.CSSProperties;
 }
 
-export default class FontIcon extends React.Component<FontIconProps, {}> {
+export class FontIcon extends React.Component<FontIconProps, {}> {
 }
+
+export default FontIcon;

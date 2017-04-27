@@ -23,8 +23,10 @@ export interface TabsProps {
   value?: any;
 }
 
-export default class Tabs extends React.Component<TabsProps, {}> {
+export class Tabs extends React.Component<TabsProps, {}> {
 }
+
+export default Tabs;
 
 export interface TabProps {
   buttonStyle?: React.CSSProperties;

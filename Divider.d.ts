@@ -7,5 +7,7 @@ export interface DividerProps {
   style?: React.CSSProperties;
 }
 
-export default class Divider extends React.Component<DividerProps, {}> {
+export class Divider extends React.Component<DividerProps, {}> {
 }
+
+export default Divider;

@@ -24,5 +24,7 @@ export interface DialogProps {
   titleStyle?: React.CSSProperties;
 }
 
-export default class Dialog extends React.Component<DialogProps, {}> {
+export class Dialog extends React.Component<DialogProps, {}> {
 }
+
+export default Dialog;

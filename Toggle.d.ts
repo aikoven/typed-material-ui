@@ -26,7 +26,9 @@ export interface ToggleProps extends CommonEnhancedSwitchProps<Toggle> {
   valueLink?: ReactLink<any>;
 }
 
-export default class Toggle extends React.Component<ToggleProps, {}> {
+export class Toggle extends React.Component<ToggleProps, {}> {
   isToggled(): boolean;
   setToggled(newToggledValue: boolean): void;
 }
+
+export default Toggle;

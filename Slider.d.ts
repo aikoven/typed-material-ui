@@ -21,5 +21,7 @@ export interface SliderProps {
   value?: number;
 }
 
-export default class Slider extends React.Component<SliderProps, {}> {
+export class Slider extends React.Component<SliderProps, {}> {
 }
+
+export default Slider;

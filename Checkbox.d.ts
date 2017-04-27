@@ -20,7 +20,9 @@ export interface CheckboxProps extends CommonEnhancedSwitchProps<Checkbox> {
   valueLink?: ReactLink<boolean>;
 }
 
-export default class Checkbox extends React.Component<CheckboxProps, {}> {
+export class Checkbox extends React.Component<CheckboxProps, {}> {
   isChecked(): void;
   setChecked(newCheckedValue: boolean): void;
 }
+
+export default Checkbox;

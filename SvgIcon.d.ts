@@ -11,5 +11,7 @@ interface SvgIconProps extends React.SVGAttributes<any> {
   viewBox?: string;
 }
 
-export default class SvgIcon extends React.Component<SvgIconProps, {}> {
+export class SvgIcon extends React.Component<SvgIconProps, {}> {
 }
+
+export default SvgIcon;

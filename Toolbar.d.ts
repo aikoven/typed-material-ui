@@ -7,8 +7,10 @@ export interface ToolbarProps {
   style?: React.CSSProperties;
 }
 
-export default class Toolbar extends React.Component<ToolbarProps, {}> {
+export class Toolbar extends React.Component<ToolbarProps, {}> {
 }
+
+export default Toolbar;
 
 export interface ToolbarGroupProps {
   className?: string;
@@ -25,7 +27,8 @@ export interface ToolbarSeparatorProps {
   style?: React.CSSProperties;
 }
 
-export class ToolbarSeparator extends React.Component<ToolbarSeparatorProps, {}> {
+export class ToolbarSeparator
+extends React.Component<ToolbarSeparatorProps, {}> {
 }
 
 export interface ToolbarTitleProps extends React.HTMLAttributes<any> {

@@ -24,8 +24,10 @@ export interface TableProps {
   wrapperStyle?: React.CSSProperties;
 }
 
-export default class Table extends React.Component<TableProps, {}> {
+export class Table extends React.Component<TableProps, {}> {
 }
+
+export default Table;
 
 export interface TableRowProps {
   // <tr/> is element that get the 'other' properties

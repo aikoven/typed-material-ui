@@ -29,5 +29,7 @@ export interface DropDownMenuProps {
   value?: any;
 }
 
-export default class DropDownMenu extends React.Component<DropDownMenuProps, {}> {
+export class DropDownMenu extends React.Component<DropDownMenuProps, {}> {
 }
+
+export default DropDownMenu;

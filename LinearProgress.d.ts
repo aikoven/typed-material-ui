@@ -10,5 +10,7 @@ export interface LinearProgressProps {
   value?: number;
 }
 
-export default class LinearProgress extends React.Component<LinearProgressProps, {}> {
+export class LinearProgress extends React.Component<LinearProgressProps, {}> {
 }
+
+export default LinearProgress;

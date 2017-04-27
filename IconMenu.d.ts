@@ -6,7 +6,7 @@ import MenuItem from './MenuItem';
 
 
 // TODO: Receive <Menu/> props
-interface IconMenuProps {
+export interface IconMenuProps {
   // <Menu/> is the element that get the 'other' properties
   anchorOrigin?: Origin;
   animated?: boolean;
@@ -33,5 +33,7 @@ interface IconMenuProps {
   useLayerForClickAway?: boolean;
 }
 
-export default class IconMenu extends React.Component<IconMenuProps, {}> {
+export class IconMenu extends React.Component<IconMenuProps, {}> {
 }
+
+export default IconMenu;

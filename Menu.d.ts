@@ -27,5 +27,7 @@ export interface MenuProps<MenuValue> {
   width?: string | number;
 }
 
-export default class Menu extends React.Component<MenuProps<any>, {}> {
+export class Menu extends React.Component<MenuProps<any>, {}> {
 }
+
+export default Menu;

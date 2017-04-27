@@ -14,5 +14,7 @@ export interface SnackbarProps {
   style?: React.CSSProperties;
 }
 
-export default class Snackbar extends React.Component<SnackbarProps, {}> {
+export class Snackbar extends React.Component<SnackbarProps, {}> {
 }
+
+export default Snackbar;

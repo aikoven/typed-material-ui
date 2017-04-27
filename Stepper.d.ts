@@ -55,5 +55,7 @@ export interface StepperProps {
   style?: React.CSSProperties;
 }
 
-export default class Stepper extends React.Component<StepperProps, {}> {
+export class Stepper extends React.Component<StepperProps, {}> {
 }
+
+export default Stepper;

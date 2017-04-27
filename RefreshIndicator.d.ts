@@ -12,5 +12,8 @@ interface RefreshIndicatorProps {
   top: number;
 }
 
-export default class RefreshIndicator extends React.Component<RefreshIndicatorProps, {}> {
+export class RefreshIndicator
+extends React.Component<RefreshIndicatorProps, {}> {
 }
+
+export default RefreshIndicator;

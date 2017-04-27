@@ -23,6 +23,8 @@ export class RadioButton extends React.Component<RadioButtonProps, {}> {
   getValue(): string;
 }
 
+export default RadioButton;
+
 export interface RadioButtonGroupProps {
   className?: string;
   defaultSelected?: any;

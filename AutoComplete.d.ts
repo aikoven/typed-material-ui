@@ -34,5 +34,7 @@ export interface AutoCompleteProps<DataItem> extends TextFieldProps {
   textFieldStyle?: React.CSSProperties;
 }
 
-export default class AutoComplete extends React.Component<AutoCompleteProps<any>, {}> {
+export class AutoComplete extends React.Component<AutoCompleteProps<any>, {}> {
 }
+
+export default AutoComplete;

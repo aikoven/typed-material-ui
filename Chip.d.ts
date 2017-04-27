@@ -14,5 +14,7 @@ export interface ChipProps {
   style?: React.CSSProperties;
 }
 
-export default class Chip extends React.Component<ChipProps, {}> {
+export class Chip extends React.Component<ChipProps, {}> {
 }
+
+export default Chip;

@@ -10,5 +10,7 @@ export interface BadgeProps {
   style?: React.CSSProperties;
 }
 
-export default class Badge extends React.Component<BadgeProps, {}> {
+export class Badge extends React.Component<BadgeProps, {}> {
 }
+
+export default Badge;

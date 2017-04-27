@@ -20,5 +20,7 @@ export interface AppBarProps {
   zDepth?: number;
 }
 
-export default class AppBar extends React.Component<AppBarProps, {}> {
+export class AppBar extends React.Component<AppBarProps, {}> {
 }
+
+export default AppBar;

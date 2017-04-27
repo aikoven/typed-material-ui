@@ -8,8 +8,10 @@ export interface GridListProps {
   style?: React.CSSProperties;
 }
 
-export default class GridList extends React.Component<GridListProps, {}> {
+export class GridList extends React.Component<GridListProps, {}> {
 }
+
+export default GridList;
 
 export interface GridTileProps {
   actionIcon?: React.ReactElement<any>;
