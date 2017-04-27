@@ -1,6 +1,7 @@
 import * as React from 'react';
 
-export interface PaperProps extends React.HTMLAttributes<Paper> {
+
+export interface PaperProps extends React.HTMLAttributes<any> {
   circle?: boolean;
   rounded?: boolean;
   style?: React.CSSProperties;

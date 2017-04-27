@@ -1,7 +1,8 @@
 import * as React from 'react';
 
+
 export interface DialogProps {
-  actions?: React.ReactElement<any>[];
+  actions?: React.ReactNode[];
   actionsContainerClassName?: string;
   actionsContainerStyle?: React.CSSProperties;
   autoDetectWindowHeight?: boolean;

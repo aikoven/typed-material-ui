@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export interface DatePickerProps extends React.Props<DatePicker> {
+export interface DatePickerProps {
   // <TextField/> is the element that get the 'other' properties
   DateTimeFormat?: Intl.DateTimeFormat;
   autoOk?: boolean;
@@ -50,5 +50,6 @@ export interface DatePickerProps extends React.Props<DatePicker> {
   underlineShow?: boolean;
   underlineStyle?: React.CSSProperties;
 }
+
 export default class DatePicker extends React.Component<DatePickerProps, {}> {
 }

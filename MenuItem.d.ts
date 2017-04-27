@@ -1,11 +1,16 @@
 import * as React from 'react';
-import {TouchTapEventHandler} from "./common";
-import {ListItemProps} from "./List";
+
+import {Origin, TouchTapEventHandler} from './common';
+import {ListItemProps} from './List';
+
 
 export interface MenuItemProps extends ListItemProps {
+  anchorOrigin?: Origin;
+  // TODO: animation?:
   checked?: boolean;
+  desktop?: boolean;
   disabled?: boolean;
-  focusState?: string; // 'none', 'focused', or 'keyboard-focused'
+  focusState?: 'none' | 'focused' | 'keyboard-focused';
   innerDivStyle?: React.CSSProperties;
   insetChildren?: boolean;
   leftIcon?: React.ReactElement<any>;
@@ -18,5 +23,5 @@ export interface MenuItemProps extends ListItemProps {
   value?: any;
 }
 
-export default class MenuItem extends React.Component<MenuItemProps, {}>{
+export default class MenuItem extends React.Component<MenuItemProps, {}> {
 }

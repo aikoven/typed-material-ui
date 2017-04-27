@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export interface TimePickerProps extends React.Props<TimePicker> {
+export interface TimePickerProps {
   // <TextField/> is element that get the 'other' properties
   autoOk?: boolean;
   cancelLabel?: React.ReactNode;

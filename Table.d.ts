@@ -1,7 +1,9 @@
 import * as React from 'react';
-import {TouchTapEventHandler} from "./common";
 
-export interface TableProps extends React.Props<Table> {
+import {TouchTapEventHandler} from './common';
+
+
+export interface TableProps {
   allRowsSelected?: boolean;
   bodyStyle?: React.CSSProperties;
   className?: string;
@@ -21,10 +23,9 @@ export interface TableProps extends React.Props<Table> {
   style?: React.CSSProperties;
   wrapperStyle?: React.CSSProperties;
 }
-export class Table extends React.Component<TableProps, {}> {
-}
 
-export default Table;
+export default class Table extends React.Component<TableProps, {}> {
+}
 
 export interface TableRowProps {
   // <tr/> is element that get the 'other' properties
@@ -32,19 +33,23 @@ export interface TableRowProps {
   displayBorder?: boolean;
   hoverable?: boolean;
   hovered?: boolean;
-  onCellClick?: (e: React.MouseEvent<any>, row: number, column: number) => void;
-  onCellHover?: (e: React.MouseEvent<any>, row: number, column: number) => void;
-  onCellHoverExit?: (e: React.MouseEvent<any>, row: number, column: number) => void;
-  onRowClick?: (e: React.MouseEvent<any>, row: number) => void;
+  onCellClick?: (event: React.MouseEvent<any>,
+                 row: number, column: number) => void;
+  onCellHover?: (event: React.MouseEvent<any>,
+                 row: number, column: number) => void;
+  onCellHoverExit?: (event: React.MouseEvent<any>,
+                     row: number, column: number) => void;
+  onRowClick?: (event: React.MouseEvent<any>, row: number) => void;
   onTouchTap?: TouchTapEventHandler<any>;
-  onRowHover?: (e: React.MouseEvent<any>, row: number) => void;
-  onRowHoverExit?: (e: React.MouseEvent<any>, row: number) => void;
+  onRowHover?: (event: React.MouseEvent<any>, row: number) => void;
+  onRowHoverExit?: (event: React.MouseEvent<any>, row: number) => void;
   rowNumber?: number;
   selectable?: boolean;
   selected?: boolean;
   striped?: boolean;
   style?: React.CSSProperties;
 }
+
 export class TableRow extends React.Component<TableRowProps, {}> {
 }
 
@@ -54,14 +59,15 @@ export interface TableRowColumnProps {
   columnNumber?: number;
   hoverable?: boolean;
   key?: string;
-  onClick?: (e: React.MouseEvent<any>, column: number) => void;
-  onHover?: (e: React.MouseEvent<any>, column: number) => void;
-  onHoverExit?: (e: React.MouseEvent<any>, column: number) => void;
+  onClick?: (event: React.MouseEvent<{}>, column: number) => void;
+  onHover?: (event: React.MouseEvent<{}>, column: number) => void;
+  onHoverExit?: (event: React.MouseEvent<{}>, column: number) => void;
   style?: React.CSSProperties;
 
   // useful attributes passed to <td/>
   colSpan?: number;
 }
+
 export class TableRowColumn extends React.Component<TableRowColumnProps, {}> {
 }
 
@@ -74,6 +80,7 @@ export interface TableHeaderProps {
   selectAllSelected?: boolean;
   style?: React.CSSProperties;
 }
+
 export class TableHeader extends React.Component<TableHeaderProps, {}> {
 }
 
@@ -90,7 +97,9 @@ export interface TableHeaderColumnProps {
   // useful attributes passed to <th/>
   colSpan?: number;
 }
-export class TableHeaderColumn extends React.Component<TableHeaderColumnProps, {}> {
+
+export class TableHeaderColumn
+extends React.Component<TableHeaderColumnProps, {}> {
 }
 
 export interface TableBodyProps {
@@ -111,6 +120,7 @@ export interface TableBodyProps {
   stripedRows?: boolean;
   style?: React.CSSProperties;
 }
+
 export class TableBody extends React.Component<TableBodyProps, {}> {
 }
 
@@ -120,5 +130,6 @@ export interface TableFooterProps {
   className?: string;
   style?: React.CSSProperties;
 }
+
 export class TableFooter extends React.Component<TableFooterProps, {}> {
 }

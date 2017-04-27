@@ -1,7 +1,9 @@
 import * as React from 'react';
-import {MuiTheme} from "../styles";
 
-interface MuiThemeProviderProps extends React.Props<MuiThemeProvider> {
+import {MuiTheme} from '../styles';
+
+
+interface MuiThemeProviderProps {
   muiTheme: MuiTheme;
 }
 

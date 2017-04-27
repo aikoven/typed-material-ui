@@ -6,6 +6,7 @@ export interface SnackbarProps {
   autoHideDuration?: number;
   bodyStyle?: React.CSSProperties;
   className?: string;
+  contentStyle?: React.CSSProperties;
   message: React.ReactNode;
   onActionTouchTap?: React.TouchEventHandler<any>;
   onRequestClose?(reason: string): void;

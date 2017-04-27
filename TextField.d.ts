@@ -9,6 +9,7 @@ export interface TextFieldProps {
   errorText?: React.ReactNode;
   floatingLabelFixed?: boolean;
   floatingLabelFocusStyle?: React.CSSProperties;
+  floatingLabelShrinkStyle?: React.CSSProperties;
   floatingLabelStyle?: React.CSSProperties;
   floatingLabelText?: React.ReactNode;
   fullWidth?: boolean;
@@ -19,11 +20,11 @@ export interface TextFieldProps {
   multiLine?: boolean;
   name?: string;
   onBlur?: React.FocusEventHandler<any>;
-  onChange?(event: React.FormEvent<any>, value: string | number): void;
+  onChange?: (event: React.FormEvent<any>, value: string | number) => void;
   onFocus?: React.FocusEventHandler<any>;
   onKeyDown?: React.KeyboardEventHandler<any>;
-  rows?: number,
-  rowsMax?: number,
+  rows?: number;
+  rowsMax?: number;
   style?: React.CSSProperties;
   textareaStyle?: React.CSSProperties;
   type?: string;
@@ -33,12 +34,12 @@ export interface TextFieldProps {
   underlineStyle?: React.CSSProperties;
   value?: string | number;
 
-  onInput?: React.FormEventHandler<any>;
+  autoFocus?: boolean;
   min?: string | number;
   max?: string | number;
-  step?: string | number;
-  autoFocus?: boolean;
+  onInput?: React.FormEventHandler<any>;
   readOnly?: boolean;
+  step?: string | number;
 }
 
 export default class TextField extends React.Component<TextFieldProps, {}> {

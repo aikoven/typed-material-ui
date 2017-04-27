@@ -1,5 +1,6 @@
 import * as React from 'react';
-import {TouchTapEventHandler} from "./common";
+
+import {TouchTapEventHandler} from './common';
 
 
 export interface AppBarProps {
@@ -19,5 +20,5 @@ export interface AppBarProps {
   zDepth?: number;
 }
 
-export default class AppBar extends React.Component<AppBarProps, {}>{
+export default class AppBar extends React.Component<AppBarProps, {}> {
 }

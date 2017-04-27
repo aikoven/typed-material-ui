@@ -1,24 +1,31 @@
 import * as React from 'react';
-import {TouchTapEvent} from "./common";
-import MenuItem from "./MenuItem";
 
-export interface MenuProps {
+import {ReactLink, TouchTapEvent} from './common';
+import MenuItem from './MenuItem';
+
+export interface MenuProps<MenuValue> {
   autoWidth?: boolean;
   desktop?: boolean;
   disableAutoFocus?: boolean;
   initiallyKeyboardFocused?: boolean;
   listStyle?: React.CSSProperties;
   maxHeight?: number;
+  menuItemStyle?: React.CSSProperties;
   multiple?: boolean;
-  onChange?(e: TouchTapEvent<any>, itemValue: any | any[]): void;
+  // TODO: check signature of e
+  onChange?: (event: TouchTapEvent<any>, value: MenuValue) => void;
   onEscKeyDown?: React.KeyboardEventHandler<any>;
   onKeyDown?: React.KeyboardEventHandler<any>;
-  onItemTouchTap?(e: TouchTapEvent<any>, item: MenuItem, index: number): void;
+  onItemTouchTap?: (event: TouchTapEvent<any>,
+                    item: MenuItem, index: number) => void;
+  onMenuItemFocusChange?: (event: React.MouseEventHandler<any>,
+                           newFocusIndex: number) => void;
   selectedMenuItemStyle?: React.CSSProperties;
   style?: React.CSSProperties;
-  value?: any | any[];
+  value?: MenuValue;
+  valueLink?: ReactLink<MenuValue>;
   width?: string | number;
 }
 
-export default class Menu extends React.Component<MenuProps, {}>{
+export default class Menu extends React.Component<MenuProps<any>, {}> {
 }

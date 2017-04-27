@@ -1,19 +1,25 @@
 import * as React from 'react';
-import {Origin, TouchTapEvent, TouchTapEventHandler} from "./common";
-import {IconButtonProps} from "./IconButton";
-import MenuItem from "./MenuItem";
 
-export interface IconMenuProps {
+import {Origin, TouchTapEvent, TouchTapEventHandler} from './common';
+import {IconButtonProps} from './IconButton';
+import MenuItem from './MenuItem';
+
+
+// TODO: Receive <Menu/> props
+interface IconMenuProps {
   // <Menu/> is the element that get the 'other' properties
   anchorOrigin?: Origin;
   animated?: boolean;
-  children?: React.ReactNode;
+  // TODO: animation?:
   className?: string;
   iconButtonElement: React.ReactElement<IconButtonProps>;
   iconStyle?: React.CSSProperties;
+  listStyle?: React.CSSProperties;
   menuStyle?: React.CSSProperties;
-  onItemTouchTap?: (e: TouchTapEvent<any>, item: MenuItem) => void;
-  onKeyboardFocus?: React.FocusEventHandler<any>;
+  multiple?: boolean;
+  onItemTouchTap?: (event: TouchTapEvent<any>, item: MenuItem) => void;
+  onKeyboardFocus?: (event: React.FocusEvent<any>,
+                     isKeyboardFocused: boolean) => void;
   onMouseDown?: React.MouseEventHandler<any>;
   onMouseEnter?: React.MouseEventHandler<any>;
   onMouseLeave?: React.MouseEventHandler<any>;
@@ -24,19 +30,8 @@ export interface IconMenuProps {
   style?: React.CSSProperties;
   targetOrigin?: Origin;
   touchTapCloseDelay?: number;
-
-  // Other properties from <Menu/>
-  autoWidth?: boolean;
-  desktop?: boolean;
-  listStyle?: React.CSSProperties;
-  maxHeight?: number;
-  multiple?: boolean;
-  onChange?: (e: TouchTapEvent<any>, itemValue: any | any[]) => void;
-  onKeyDown?: React.KeyboardEventHandler<any>;
-  openDirection?: string;
-  selectedMenuItemStyle?: React.CSSProperties;
-  value?: any | any[];
-  width?: string | number;
+  useLayerForClickAway?: boolean;
 }
+
 export default class IconMenu extends React.Component<IconMenuProps, {}> {
 }

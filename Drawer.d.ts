@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 
-export interface DrawerProps extends React.Props<Drawer> {
+export interface DrawerProps {
   className?: string;
   containerClassName?: string;
   containerStyle?: React.CSSProperties;
