@@ -11,6 +11,7 @@ export interface CheckboxProps extends EnhancedSwitchProps {
   disabled?: boolean;
   iconStyle?: React.CSSProperties;
   inputStyle?: React.CSSProperties;
+  label?: React.ReactNode;
   labelPosition?: 'left' | 'right';
   labelStyle?: React.CSSProperties;
   onCheck?: (event: React.MouseEvent<any>,
