@@ -16,7 +16,7 @@ export {
   default as CircularProgress,
   CircularProgressProps
 } from './CircularProgress';
-// export {default as DatePicker, DatePickerProps} from './DatePicker';
+export {default as DatePicker, DatePickerProps} from './DatePicker';
 export {default as Dialog, DialogProps} from './Dialog';
 export {default as Divider, DividerProps} from './Divider';
 export {default as Drawer, DrawerProps} from './Drawer';
@@ -71,7 +71,7 @@ export {
   TableRowColumn, TableRowColumnProps,
 } from './Table';
 export {default as TextField, TextFieldProps} from './TextField';
-// export {default as TimePicker, TimePickerProps} from './TimePicker';
+export {default as TimePicker, TimePickerProps} from './TimePicker';
 export {default as Toggle, ToggleProps} from './Toggle';
 export {
   default as Toolbar, ToolbarProps,

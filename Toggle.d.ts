@@ -1,10 +1,10 @@
 import * as React from 'react';
 
-import {CommonEnhancedSwitchProps} from './internal/EnhancedSwitch';
+import {EnhancedSwitchProps} from './internal/EnhancedSwitch';
 import {ReactLink} from './common';
 
 
-export interface ToggleProps extends CommonEnhancedSwitchProps<Toggle> {
+export interface ToggleProps extends EnhancedSwitchProps {
   // <EnhancedSwitch/> is element that get the 'other' properties
   defaultToggled?: boolean;
   disabled?: boolean;

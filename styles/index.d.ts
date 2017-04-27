@@ -251,7 +251,7 @@ export interface MuiTheme extends RawTheme {
     connectorLineColor?: string;
   };
   svgIcon?: {
-    color?: string,
+    color?: string;
   };
   table?: {
     backgroundColor?: string;

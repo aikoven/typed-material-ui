@@ -23,7 +23,7 @@ export interface DropDownMenuProps {
   onClose?: () => void;
   openImmediately?: boolean;
   selectedMenuItemStyle?: React.CSSProperties;
-  selectionRenderer?: (value: any) => void;
+  selectionRenderer?: (value: any) => any;
   style?: React.CSSProperties;
   targetOrigin?: Origin;
   underlineStyle?: React.CSSProperties;

@@ -29,7 +29,7 @@ export interface AutoCompleteProps<DataItem> extends TextFieldProps {
   onNewRequest?: (chosenRequest: string, index: number) => void;
   onUpdateInput?: (searchText: string,
                    dataSource: DataItem[],
-                   params: {}) => void;
+                   params: Object) => void;
   open?: boolean;
   openOnFocus?: boolean;
   searchText?: string;

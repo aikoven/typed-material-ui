@@ -31,7 +31,7 @@ export interface ReactLink<T> {
 
 import {DOMAttributes} from 'react';
 
-declare module "react" {
+declare module 'react' {
   interface HTMLAttributes<T> extends DOMAttributes<T> {
     onTouchTap?: TouchTapEventHandler<T>;
   }

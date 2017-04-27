@@ -1,4 +1,5 @@
-import * as React from "react";
+import * as React from 'react';
+
 
 export interface TimePickerProps {
   // <TextField/> is element that get the 'other' properties
@@ -8,7 +9,7 @@ export interface TimePickerProps {
   dialogBodyStyle?: React.CSSProperties;
   dialogStyle?: React.CSSProperties;
   disabled?: boolean;
-  format?: "ampm" | "24hr";
+  format?: 'ampm' | '24hr';
   okLabel?: React.ReactNode;
   onChange?: (event: any, time: Date) => void;
   onDismiss?: () => void;

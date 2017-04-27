@@ -1,9 +1,8 @@
 import * as React from 'react';
-import {CommonEnhancedSwitchProps} from "./internal/EnhancedSwitch";
+import {EnhancedSwitchProps} from "./internal/EnhancedSwitch";
 
 
-export interface RadioButtonProps
-extends CommonEnhancedSwitchProps<RadioButton> {
+export interface RadioButtonProps extends EnhancedSwitchProps {
   // <EnhancedSwitch/> is element that get the 'other' properties
   checked?: boolean;
   checkedIcon?: React.ReactElement<any>;
