@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './common';
 
 
 export interface ToolbarProps {
@@ -31,7 +32,7 @@ export class ToolbarSeparator
 extends React.Component<ToolbarSeparatorProps, {}> {
 }
 
-export interface ToolbarTitleProps extends React.HTMLAttributes<any> {
+export interface ToolbarTitleProps extends React.HTMLAttributes<ToolbarTitle> {
   className?: string;
   style?: React.CSSProperties;
   text?: React.ReactNode;

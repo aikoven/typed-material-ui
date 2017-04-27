@@ -9,7 +9,7 @@ export interface PopoverAnimationProps {
 }
 
 export interface PopoverProps {
-  anchorEl?: React.ReactInstance;
+  anchorEl?: Element;
   anchorOrigin?: Origin;
   animated?: boolean;
   animation?: React.ComponentClass<PopoverAnimationProps>;
