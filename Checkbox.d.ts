@@ -1,17 +1,17 @@
 import * as React from 'react';
 
 import {ReactLink} from './common';
-import {EnhancedSwitchProps} from './internal/EnhancedSwitch';
+import {CommonEnhancedSwitchProps} from './internal/EnhancedSwitch';
 
 
-export interface CheckboxProps extends EnhancedSwitchProps {
+export interface CheckboxProps extends CommonEnhancedSwitchProps<Checkbox> {
   checked?: boolean;
   checkedIcon?: React.ReactElement<any>;
   defaultChecked?: boolean;
   disabled?: boolean;
   iconStyle?: React.CSSProperties;
   inputStyle?: React.CSSProperties;
-  label?: React.ReactNode;
+  label?: string;
   labelPosition?: 'left' | 'right';
   labelStyle?: React.CSSProperties;
   onCheck?: (event: React.MouseEvent<any>,
