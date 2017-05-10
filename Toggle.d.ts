@@ -1,17 +1,17 @@
 import * as React from 'react';
 
-import {EnhancedSwitchProps} from './internal/EnhancedSwitch';
+import {CommonEnhancedSwitchProps} from './internal/EnhancedSwitch';
 import {ReactLink} from './common';
 
 
-export interface ToggleProps extends EnhancedSwitchProps {
+export interface ToggleProps extends CommonEnhancedSwitchProps<Toggle> {
   // <EnhancedSwitch/> is element that get the 'other' properties
   defaultToggled?: boolean;
   disabled?: boolean;
   elementStyle?: React.CSSProperties;
   iconStyle?: React.CSSProperties;
   inputStyle?: React.CSSProperties;
-  label?: React.ReactNode;
+  label?: string;
   labelPosition?: 'left' | 'right';
   labelStyle?: React.CSSProperties;
   onToggle?: (event: React.MouseEvent<any>,

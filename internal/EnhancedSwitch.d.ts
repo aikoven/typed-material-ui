@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 
-export interface CommonEnhancedSwitchProps<T> {
+export interface CommonEnhancedSwitchProps<T> extends React.HTMLAttributes<T> {
 }
 
 export interface EnhancedSwitchProps
@@ -16,7 +16,7 @@ extends CommonEnhancedSwitchProps<EnhancedSwitch> {
   id?: string;
   inputStyle?: React.CSSProperties;
   inputType: string;
-  label?: React.ReactNode;
+  label?: string;
   labelPosition?: 'left' | 'right';
   labelStyle?: React.CSSProperties;
   name?: string;
