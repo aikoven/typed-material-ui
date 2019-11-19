@@ -17,6 +17,8 @@ export interface IconButtonProps extends SharedEnhancedButtonProps {
   onFocus?: React.FocusEventHandler<any>;
   onKeyboardFocus?: (e: React.FocusEvent<any>,
                      isKeyboardFocused: boolean) => void;
+  onMouseDown?: React.MouseEventHandler<any>;
+  onMouseUp?: React.MouseEventHandler<any>;
   onMouseEnter?: React.MouseEventHandler<any>;
   onMouseLeave?: React.MouseEventHandler<any>;
   onMouseOut?: React.MouseEventHandler<any>;
